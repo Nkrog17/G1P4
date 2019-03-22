@@ -1,0 +1,68 @@
+#include "GSR_Class.h";
+classGSR GSRC;
+
+//Variable classifications
+const long refreshR = 10;
+unsigned char counter;  //antal hjerteslag.
+unsigned long temp[refreshR + 1]; //array der skal have plads til counter
+unsigned long sub;      //forskellen mellem sidste hjerte slag og det nuværende
+bool data_effect = true; //boolean der styrer
+unsigned int heart_rate;//the measurement result of heart rate
+const int marefreshR_heartpluse_duty = 2000;//you can change it follow your system's request.
+//2000 meams 2 seconds. System return error
+//if the duty overtrip 2 second.
+
+void setup(){
+  Serial.begin(9600);
+  arrayInit();
+  attachInterrupt(0, interrupt, RISING);//Starts interrupt function (HR)
+}
+
+void loop(){
+  GSRC.GSRrun();
+}
+
+/*Function: calculate the heart rate*/
+void sum(){
+  if (data_effect) {
+    HR = (60 * refreshR * 1000) / (temp[refreshR] - temp[0]); //60*refreshR*1000/refreshR_total_time && Det her er regnestykket. Vi kan lave en gennemsnitspool og erstatte den hvis heartrate "spiker".
+    Serial.print("Heart_rate_is: ");
+    Serial.println(HR);
+  }
+  data_effect = 1; //sign bit
+}
+/*Function: Interrupt service routine.Get the sigal from the erefreshRternal interrupt*/
+void interrupt() {
+  temp[counter] = millis(); //Counter er 0 her, og millis starter en counter i milisekunder.
+  switch (counter) { //Dette er et if statemt. Case 0 betyder, hvis counter = 0, så åbner den nedenstående. Hvis det er andet end 0, så går den ind i default.
+    case 0:
+      sub = temp[counter] - temp[refreshR];
+      break;
+    default:
+      sub = temp[counter] - temp[counter - 1];
+      break;
+  }
+  if (sub > marefreshR_heartpluse_duty) {
+    data_effect = 0; //sign bit
+    counter = 0;
+    Serial.println("Heart rate measure error,test will restart!" );
+    arrayInit();
+  }
+  if (counter == refreshR && data_effect) {
+    counter = 0;
+    sum();
+  }
+  else if (counter != refreshR && data_effect)
+    counter++;
+  else {
+    counter = 0;
+    data_effect = 1;
+  }
+}
+void arrayInit(){
+  for (unsigned char i = 0; i < refreshR; i ++)
+  {
+    temp[i] = 0;
+  }
+  temp[refreshR] = millis();
+}

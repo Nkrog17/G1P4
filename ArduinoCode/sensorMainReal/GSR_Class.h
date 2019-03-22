@@ -1,4 +1,4 @@
-class GSR{
+class classGSR{
   public:
 const int GSR=A2;
 int GSRsensorValue;
@@ -6,9 +6,9 @@ int GSRsensorValue;
 void GSRrun(){
 
    GSRsensorValue=analogRead(GSR);
-
+    
     Serial.print("GSRsensorValue: ");
     Serial.println(GSRsensorValue);
-    
+    delay(1000);
   }
 };
