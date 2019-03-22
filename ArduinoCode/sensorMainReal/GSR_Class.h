@@ -7,7 +7,7 @@ void GSRrun(){
 
    GSRsensorValue=analogRead(GSR);
     
-    Serial.print("GSRsensorValue: ");
+    Serial.print("GSR=");
     Serial.println(GSRsensorValue);
     delay(1000);
   }

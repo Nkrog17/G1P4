@@ -15,7 +15,7 @@ const int marefreshR_heartpluse_duty = 2000;//you can change it follow your syst
 void setup(){
   Serial.begin(9600);
   arrayInit();
-  attachInterrupt(0, interrupt, RISING);//Starts interrupt function (HR)
+  attachInterrupt(0, interrupt, RISING);
 }
 
 void loop(){
@@ -26,15 +26,15 @@ void loop(){
 void sum(){
   if (data_effect) {
     HR = (60 * refreshR * 1000) / (temp[refreshR] - temp[0]); //60*refreshR*1000/refreshR_total_time && Det her er regnestykket. Vi kan lave en gennemsnitspool og erstatte den hvis heartrate "spiker".
-    Serial.print("Heart_rate_is: ");
+    Serial.print("HR=");
     Serial.println(HR);
   }
   data_effect = 1; //sign bit
 }
 /*Function: Interrupt service routine.Get the sigal from the erefreshRternal interrupt*/
 void interrupt() {
-  temp[counter] = millis(); //Counter er 0 her, og millis starter en counter i milisekunder.
-  switch (counter) { //Dette er et if statemt. Case 0 betyder, hvis counter = 0, så åbner den nedenstående. Hvis det er andet end 0, så går den ind i default.
+  temp[counter] = millis(); 
+  switch (counter) { 
     case 0:
       sub = temp[counter] - temp[refreshR];
       break;
