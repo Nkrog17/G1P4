@@ -7,7 +7,7 @@ unsigned char counter;  //antal hjerteslag.
 unsigned long temp[refreshR + 1]; //array der skal have plads til counter
 unsigned long sub;      //forskellen mellem sidste hjerte slag og det nuværende
 bool data_effect = true; //boolean der styrer
-unsigned int heart_rate;//the measurement result of heart rate
+unsigned int HR;//the measurement result of heart rate
 const int marefreshR_heartpluse_duty = 2000;//you can change it follow your system's request.
 //2000 meams 2 seconds. System return error
 //if the duty overtrip 2 second.
