@@ -6,9 +6,9 @@ const long refreshR = 10;
 unsigned char counter;  //antal hjerteslag.
 unsigned long temp[refreshR + 1]; //array der skal have plads til counter
 unsigned long sub;      //forskellen mellem sidste hjerte slag og det nuværende
-bool data_effect = true; //boolean der styrer
+bool startBool = true; //boolean der styrer
 unsigned int HR;//the measurement result of heart rate
-const int marefreshR_heartpluse_duty = 2000;//you can change it follow your system's request.
+const int HRTimeOut = 2000;//you can change it follow your system's request.
 //2000 meams 2 seconds. System return error
 //if the duty overtrip 2 second.
 
@@ -24,12 +24,13 @@ void loop(){
 
 /*Function: calculate the heart rate*/
 void sum(){
-  if (data_effect) {
-    HR = (60 * refreshR * 1000) / (temp[refreshR] - temp[0]); //60*refreshR*1000/refreshR_total_time && Det her er regnestykket. Vi kan lave en gennemsnitspool og erstatte den hvis heartrate "spiker".
+  if (startBool) {
+    HR = (60 * refreshR * 1000) / (temp[refreshR] - temp[0]); 
     Serial.print("HR=");
     Serial.println(HR);
+    Serial.flush();
   }
-  data_effect = 1; //sign bit
+  startBool = true; 
 }
 /*Function: Interrupt service routine.Get the sigal from the erefreshRternal interrupt*/
 void interrupt() {
@@ -42,21 +43,21 @@ void interrupt() {
       sub = temp[counter] - temp[counter - 1];
       break;
   }
-  if (sub > marefreshR_heartpluse_duty) {
-    data_effect = 0; //sign bit
+  if (sub > HRTimeOut) {
+    startBool = false; //sign bit
     counter = 0;
-    Serial.println("Heart rate measure error,test will restart!" );
+    Serial.println("Heart rate measure error, test will restart!" );
     arrayInit();
   }
-  if (counter == refreshR && data_effect) {
+  if (counter == refreshR && startBool) {
     counter = 0;
     sum();
   }
-  else if (counter != refreshR && data_effect)
+  else if (counter != refreshR && startBool)
     counter++;
   else {
     counter = 0;
-    data_effect = 1;
+    startBool = true;
   }
 }
 void arrayInit(){

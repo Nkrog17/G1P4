@@ -9,6 +9,7 @@ void GSRrun(){
     
     Serial.print("GSR=");
     Serial.println(GSRsensorValue);
+    Serial.flush();
     delay(1000);
   }
 };
