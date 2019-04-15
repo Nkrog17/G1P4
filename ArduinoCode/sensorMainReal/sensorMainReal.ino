@@ -2,7 +2,7 @@
 classGSR GSRC;
 
 //Variable classifications
-const long refreshR = 10;
+const long refreshR = 5;
 unsigned char counter;  //antal hjerteslag.
 unsigned long temp[refreshR + 1]; //array der skal have plads til counter
 unsigned long sub;      //forskellen mellem sidste hjerte slag og det nuværende
