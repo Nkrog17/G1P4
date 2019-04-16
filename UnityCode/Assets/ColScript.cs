@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorOpener : MonoBehaviour
+public class ColScript : MonoBehaviour
 {
-    public GameObject doorSlamCol;
     Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -18,18 +17,8 @@ public class DoorOpener : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        anim.SetTrigger("doorClose");
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        anim.enabled = true;
-    }
-
-    void pauseAnim()
-    {
-        anim.enabled = false;
+        anim.Play("doorClose");
     }
 }
