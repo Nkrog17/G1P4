@@ -1,0 +1,7 @@
+Emil checkpoints:
+starter omgang 1: 1
+rusk omgang 2: 4,07
+dør lukker omgang 3: 4,36
+wc dør omgang 4: 5,18
+hallway lys slukker omgang 5: 5,52
+bathroom baby cry omgang 6: 7,16
