@@ -2,28 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AmbienceAudioTrigger : MonoBehaviour
+public class VaseSoundTrigger : MonoBehaviour
 {
-   
-   
-    public AudioSource ambience;
+    public AudioSource vase;
+    bool havePlayed = false;
 
     private void OnTriggerEnter(Collider collider)
     {
-       
-        ambience.Play();
-        ambience.loop = true;
-
+        if (!havePlayed)
+        {
+            vase = GetComponent<AudioSource>();
+            vase.Play();
+            havePlayed = true;
+        }
     }
     // Start is called before the first frame update
     void Start()
     {
-        ambience = GetComponent<AudioSource>();
+       
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }

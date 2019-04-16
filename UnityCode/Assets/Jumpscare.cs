@@ -2,28 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AmbienceAudioTrigger : MonoBehaviour
+public class Jumpscare : MonoBehaviour
 {
-   
-   
-    public AudioSource ambience;
+
+    public AudioSource jumpscare;
+    bool havePlayed = false;
 
     private void OnTriggerEnter(Collider collider)
     {
-       
-        ambience.Play();
-        ambience.loop = true;
-
+        if (!havePlayed)
+        {
+            jumpscare = GetComponent<AudioSource>();
+            jumpscare.Play();
+            havePlayed = true;
+        }
     }
     // Start is called before the first frame update
     void Start()
     {
-        ambience = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
