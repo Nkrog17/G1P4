@@ -1,0 +1,7 @@
+omgang 1: 01.00,45
+omgang 2: 01.53,10
+omgang 3: 00.37,41
+omgang 4: 00.27,76
+omgang 5: 00.23,96
+omgang 6: 00.59,65
+omgang 7: 00.03,65
