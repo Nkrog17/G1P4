@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ColScript : MonoBehaviour
 {
+    public GameObject door;
     Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = door.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -19,6 +20,10 @@ public class ColScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        anim.Play("doorClose");
+        anim.SetTrigger("doorClose");
+    }
+
+    void PauseAnimation(){
+    	anim.enabled = false;
     }
 }
