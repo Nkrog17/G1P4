@@ -12,6 +12,6 @@ public class ColDoorClose : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        anim.SetTrigger("doorCloseReal");
+        anim.SetTrigger("doorClose");
     }
 }
