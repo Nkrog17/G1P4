@@ -37,7 +37,7 @@ public class LightController : MonoBehaviour
         }
     }
 
-    void lightSwitch(){
+    public void lightSwitch(){
         if(lit){
             lit = false;
             childLight.GetComponent<Light>().range = 0;
