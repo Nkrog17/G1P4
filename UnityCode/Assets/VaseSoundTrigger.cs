@@ -19,8 +19,10 @@ public class VaseSoundTrigger : MonoBehaviour
             vase = GetComponent<AudioSource>();
             vase.Play();
             havePlayed = true;
-            vaseNotBroken.SetActive(false);
 
+
+
+            vaseNotBroken.SetActive(false);
             vaseBroken.SetActive(true);
             
             
