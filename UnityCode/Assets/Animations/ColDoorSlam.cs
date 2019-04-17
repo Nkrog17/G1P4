@@ -9,12 +9,15 @@ public class ColDoorSlam : MonoBehaviour
     public GameObject corridorlamp;
     public GameObject turnOffLamp1;
     public GameObject turnOffLamp2;
+    public AudioSource knirk;
+
     Animator anim;
     bool TRIGGERED = false;
 
 
     void Start()
     {
+        knirk = GetComponent<AudioSource>();
         anim = door.GetComponent<Animator>();
     }
 
@@ -25,6 +28,9 @@ public class ColDoorSlam : MonoBehaviour
             StartCoroutine(waiter());
             turnOffLamp2.GetComponent<LightController>().lightSwitch();
             turnOffLamp1.GetComponent<LightController>().lightSwitch();
+            knirk.Play();
+
+
         }
         TRIGGERED = true;
     }
