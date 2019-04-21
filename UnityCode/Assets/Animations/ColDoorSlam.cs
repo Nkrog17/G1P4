@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ColDoorSlam : MonoBehaviour
 {
+    public  static bool door4Open = false;
     public GameObject door;
     public GameObject doorlamp;
     public GameObject corridorlamp;
@@ -29,6 +30,7 @@ public class ColDoorSlam : MonoBehaviour
             turnOffLamp2.GetComponent<LightController>().lightSwitch();
             turnOffLamp1.GetComponent<LightController>().lightSwitch();
             knirk.Play();
+            door4Open = true;
 
 
         }

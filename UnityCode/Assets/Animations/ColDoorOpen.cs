@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ColDoorOpen : MonoBehaviour
 {
     public GameObject door;
@@ -17,7 +18,9 @@ public class ColDoorOpen : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        anim.SetTrigger("doorOpen");
+        if (ColDoorSlam.door4Open == true) {
+            anim.SetTrigger("doorOpen");
+        }
 
         if (!knirkHavePlayed)
         {
