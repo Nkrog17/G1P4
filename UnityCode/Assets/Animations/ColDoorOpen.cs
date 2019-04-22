@@ -20,12 +20,14 @@ public class ColDoorOpen : MonoBehaviour
     {
         if (ColDoorSlam.door4Open == true) {
             anim.SetTrigger("doorOpen");
+
+            if (!knirkHavePlayed)
+            {
+                knirk.Play();
+                knirkHavePlayed = true;
+            }
         }
 
-        if (!knirkHavePlayed)
-        {
-            knirk.Play();
-            knirkHavePlayed = true;
-        }
+        
     }
 }
