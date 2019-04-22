@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -9794,6 +9794,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 559512632}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &564681798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1188183546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &564681804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564681798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bcea04d6ae86f242af548e6f4c1b758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &566901805
 GameObject:
   m_ObjectHideFlags: 0
@@ -20830,6 +20848,14 @@ MonoBehaviour:
   vaseNotBroken: {fileID: 1555254691}
   vaseBroken: {fileID: 966164251}
   vase: {fileID: 0}
+  Lamp1: {fileID: 0}
+  Lamp2: {fileID: 0}
+  Lamp3: {fileID: 0}
+  Lamp4: {fileID: 0}
+  Lamp5: {fileID: 0}
+  Lamp6: {fileID: 0}
+  Lamp7: {fileID: 0}
+  VaseLamp: {fileID: 0}
 --- !u!82 &1057613417
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30174,6 +30200,14 @@ MonoBehaviour:
   vaseNotBroken: {fileID: 0}
   vaseBroken: {fileID: 0}
   vase: {fileID: 0}
+  Lamp1: {fileID: 0}
+  Lamp2: {fileID: 0}
+  Lamp3: {fileID: 0}
+  Lamp4: {fileID: 0}
+  Lamp5: {fileID: 0}
+  Lamp6: {fileID: 0}
+  Lamp7: {fileID: 0}
+  VaseLamp: {fileID: 0}
 --- !u!1 &1555666953
 GameObject:
   m_ObjectHideFlags: 0
