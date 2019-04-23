@@ -6,12 +6,12 @@ public class ColDoorClose : MonoBehaviour
 {
     public GameObject door;
     Animator anim;
-    public AudioSource knirk;
+    public AudioSource close;
     bool knirkHavePlayed = false;
 
     void Start(){
         anim = door.GetComponent<Animator>();
-        knirk = GetComponent<AudioSource>();
+        close = door.GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter(Collider other){
@@ -20,7 +20,7 @@ public class ColDoorClose : MonoBehaviour
 
         if (!knirkHavePlayed)
         {
-            knirk.Play();
+            close.PlayDelayed(0.5f);
             knirkHavePlayed = true;
         }
     }
