@@ -6,21 +6,21 @@ public class ColDoorPound : MonoBehaviour
 {
     public GameObject door;
     Animator anim;
-    public AudioSource knirk;
-    bool knirkHavePlayed; 
+    public AudioSource pounding;
+    bool poundingHavePlayed; 
 
     void Start(){
-        knirk = GetComponent<AudioSource>();
+        pounding = door.GetComponent<AudioSource>();
         anim = door.GetComponent<Animator>();
     }
 
     void OnTriggerEnter(Collider other){
         anim.SetTrigger("doorPound");
 
-        if (!knirkHavePlayed)
+        if (!poundingHavePlayed)
         {
-            knirk.Play();
-            knirkHavePlayed = true;
+            pounding.PlayDelayed(0.35f);
+            poundingHavePlayed = true;
         }
     }
 }

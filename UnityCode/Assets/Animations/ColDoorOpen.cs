@@ -12,7 +12,7 @@ public class ColDoorOpen : MonoBehaviour
 
     void Start()
     {
-        knirk = GetComponent<AudioSource>();
+        knirk = door.GetComponent<AudioSource>();
         anim = door.GetComponent<Animator>();
     }
 
@@ -23,7 +23,7 @@ public class ColDoorOpen : MonoBehaviour
 
             if (!knirkHavePlayed)
             {
-                knirk.Play();
+                knirk.PlayDelayed(0.4f);
                 knirkHavePlayed = true;
             }
         }
