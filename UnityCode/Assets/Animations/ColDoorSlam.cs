@@ -11,8 +11,9 @@ public class ColDoorSlam : MonoBehaviour
     public GameObject turnOffLamp1;
     public GameObject turnOffLamp2;
     public AudioSource doorSlam;
-        
-    
+    public AudioSource jumpscare;
+    bool havePlayedJS = false;
+
 
     Animator anim;
     bool TRIGGERED = false;
@@ -22,11 +23,19 @@ public class ColDoorSlam : MonoBehaviour
     {
         anim = door.GetComponent<Animator>();
         doorSlam = door.GetComponent<AudioSource>();
+        jumpscare = GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if(!TRIGGERED){
+        if (!havePlayedJS)
+        {
+            
+            jumpscare.PlayDelayed(0.5f);
+            havePlayedJS = true;
+        }
+
+        if (!TRIGGERED){
             anim.SetTrigger("doorSlam");
             StartCoroutine(waiter());
             turnOffLamp2.GetComponent<LightController>().lightSwitch();
