@@ -22,7 +22,7 @@ public class VaseSoundTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        
+
 
         if (!havePlayed)
         {
@@ -37,7 +37,7 @@ public class VaseSoundTrigger : MonoBehaviour
             StartCoroutine(waiter());
 
 
-            
+
 
         }
     }
@@ -45,25 +45,32 @@ public class VaseSoundTrigger : MonoBehaviour
     void Start()
     {
         vaseBroken.SetActive(false);
-        
+
     }
 
     IEnumerator waiter()
     {
         yield return new WaitForSeconds(1);
+        Lamp1.GetComponent<AudioSource>().Play();
         Lamp1.GetComponent<LightController>().lightSwitch();
         yield return new WaitForSeconds(1);
+        Lamp2.GetComponent<AudioSource>().Play();
         Lamp2.GetComponent<LightController>().lightSwitch();
         yield return new WaitForSeconds(1);
+        Lamp3.GetComponent<AudioSource>().Play();
         Lamp3.GetComponent<LightController>().lightSwitch();
         VaseLamp.GetComponent<LightController>().lightSwitch();
         yield return new WaitForSeconds(1);
+        Lamp4.GetComponent<AudioSource>().Play();
         Lamp4.GetComponent<LightController>().lightSwitch();
         yield return new WaitForSeconds(1);
+        Lamp5.GetComponent<AudioSource>().Play();
         Lamp5.GetComponent<LightController>().lightSwitch();
         yield return new WaitForSeconds(1);
+        Lamp6.GetComponent<AudioSource>().Play();
         Lamp6.GetComponent<LightController>().lightSwitch();
         yield return new WaitForSeconds(1);
+        Lamp7.GetComponent<AudioSource>().Play();
         Lamp7.GetComponent<LightController>().lightSwitch();
 
     }
@@ -71,6 +78,6 @@ public class VaseSoundTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
