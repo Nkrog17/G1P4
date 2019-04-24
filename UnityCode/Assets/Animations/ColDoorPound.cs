@@ -19,7 +19,7 @@ public class ColDoorPound : MonoBehaviour
 
         if (!poundingHavePlayed)
         {
-            pounding.PlayDelayed(0.35f);
+            pounding.PlayDelayed(0.30f);
             poundingHavePlayed = true;
         }
     }
