@@ -6,7 +6,7 @@ public class LockedDoor4 : MonoBehaviour
 {
     public GameObject door;
     public AudioSource lockedDoor;
-    bool havePlayed = false;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +17,10 @@ public class LockedDoor4 : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        if (havePlayed == false)
+        if (ColDoorSlam.door4Open==false)
         {
             lockedDoor.Play();
-            havePlayed = true;
+           
         }
     }
 }
