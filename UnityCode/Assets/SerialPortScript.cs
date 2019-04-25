@@ -7,7 +7,7 @@ using System.Threading;
 public class SerialPortScript : MonoBehaviour
 {
     Thread myThread;
-    SerialPort stream = new SerialPort("COM7", 9600);
+    SerialPort stream = new SerialPort("COM5", 9600);
     List<int> allHR = new List<int>();
     List<int> allGSR = new List<int>();
     List<int> HRtime = new List<int>();
@@ -63,13 +63,13 @@ public class SerialPortScript : MonoBehaviour
         {
             allHR.Add(int.Parse(splitStrings[1]));
             latestHR = int.Parse(splitStrings[1]);
-            Debug.Log("HR er " + splitStrings[1]);
+            //Debug.Log("HR er " + splitStrings[1]);
         }
         else if (splitStrings[0].Equals("GSR"))
         {
             allGSR.Add(int.Parse(splitStrings[1]));
             latestGSR = int.Parse(splitStrings[1]);
-            Debug.Log("GSR er " + splitStrings[1]);
+            //Debug.Log("GSR er " + splitStrings[1]);
         }
         else
         {

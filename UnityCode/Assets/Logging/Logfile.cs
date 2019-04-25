@@ -4,28 +4,33 @@ using UnityEngine;
 using System.IO;
 
 public class Logfile : MonoBehaviour
-   {
+{
     public GameObject serialport;
     int SPSHR;
     int SPSGSR;
     float timer = 0.0f;
-    
+    float newTimer = 0.0f;
+
     // Start is called before the first frame update
     void Start()
-    {   
+    {
         //SPSHR = serialport.GetComponent<SerialPortScript>().latestHR;
-       // SPSGSR = serialport.GetComponent<SerialPortScript>().latestGSR;
+        // SPSGSR = serialport.GetComponent<SerialPortScript>().latestGSR;
         //WriteToFile("HR="+SPSHR+" GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
     }
     private void Update()
     {
-        SPSHR = serialport.GetComponent<SerialPortScript>().latestHR;
-        SPSGSR = serialport.GetComponent<SerialPortScript>().latestGSR;
         timer += Time.deltaTime;
-        
-        WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
-        Debug.Log("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
-        
+         
+            if (timer >= newTimer) { 
+            SPSHR = serialport.GetComponent<SerialPortScript>().latestHR;
+            SPSGSR = serialport.GetComponent<SerialPortScript>().latestGSR;
+            WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
+            Debug.Log("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
+            newTimer = timer+1;
+
+            }
+       
     }
 
     public void WriteToFile(string message)
@@ -34,7 +39,7 @@ public class Logfile : MonoBehaviour
         {
             logFile.WriteLine(message);
         }
-           
-        
+
+
     }
 }

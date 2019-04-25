@@ -7,6 +7,7 @@ public class CryingSound : MonoBehaviour
     
     public GameObject door;
     public AudioSource crying;
+    bool isCrying = false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +18,10 @@ public class CryingSound : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        crying.Play();
-
+        if (!isCrying) {
+            crying.Play();
+            isCrying = true;
+        }
 
     }
 }
