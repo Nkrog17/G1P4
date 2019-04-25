@@ -7,6 +7,8 @@ public class VaseSoundTrigger : MonoBehaviour
     public GameObject vaseNotBroken;
     public GameObject vaseBroken;
 
+    public CameraShake cameraShake;
+
     public AudioSource vase;
     bool havePlayed = false;
 
@@ -53,6 +55,7 @@ public class VaseSoundTrigger : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Door7.GetComponent<AudioSource>().Play();
+        StartCoroutine(cameraShake.Shake(6f, .1f));
         yield return new WaitForSeconds(2);
         Lamp1.GetComponent<AudioSource>().Play();
         Lamp1.GetComponent<LightController>().lightSwitch();
