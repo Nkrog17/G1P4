@@ -4,7 +4,7 @@ using UnityEngine;
 using System.IO.Ports;
 using System.Threading;
 
-public class SerialPort : MonoBehaviour
+public class SerialPortScript : MonoBehaviour
 {
     Thread myThread; 
     SerialPort stream = new SerialPort("COM7", 9600);
