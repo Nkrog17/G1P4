@@ -15,6 +15,7 @@ public class SerialPortTest : MonoBehaviour
 
     int GSRspikes;
     int HRspikes;
+    public int allSpikes;
     bool GSRspikeNow = false;
     bool HRspikeNow = false;
     int GSRbackRead = 10;
@@ -22,6 +23,9 @@ public class SerialPortTest : MonoBehaviour
     int nonsenseGSR = 5;
     int nonsenseHR = 5;
     bool baseLine = true;
+
+    public int latestHR;
+    public int latestGSR;
 
     void Start()
     {
@@ -58,11 +62,13 @@ public class SerialPortTest : MonoBehaviour
         if (splitStrings[0].Equals("HR"))
         {
             allHR.Add(int.Parse(splitStrings[1]));
+            latestHR = splitStrings[1];
             Debug.Log("HR er " + splitStrings[1]);
         }
         else if (splitStrings[0].Equals("GSR"))
         {
             allGSR.Add(int.Parse(splitStrings[1]));
+            latestGSR = splitStrings[1];
             Debug.Log("GSR er " + splitStrings[1]);
         }
         else {
@@ -82,7 +88,8 @@ public class SerialPortTest : MonoBehaviour
         if((allGSR.Count > GSRbackRead && allHR.Count > HRbackRead)){
         //if(allGSR.Count > GSRbackRead){
             RegisterSpike();
-        }
+            allSpikes = HRspikes + GSRspikes;
+        
     }
 
     void RegisterSpike()
