@@ -40,7 +40,7 @@ public class ColDoorSlam : MonoBehaviour
             StartCoroutine(waiter());
             turnOffLamp2.GetComponent<LightController>().lightSwitch();
             turnOffLamp1.GetComponent<LightController>().lightSwitch();
-            doorSlam.PlayDelayed(0.4f);
+           // doorSlam.PlayDelayed(0.4f);
             door4Open = true;
 
 

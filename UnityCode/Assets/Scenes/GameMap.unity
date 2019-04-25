@@ -2435,6 +2435,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1650973419}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &72002785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72002784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf99d3f060dadb14bb5a683af719bd6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &72002789
 AudioSource:
   m_ObjectHideFlags: 0
@@ -37821,7 +37833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bcea04d6ae86f242af548e6f4c1b758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serialport: {fileID: 1374880558}
+  serialport: {fileID: 0}
 --- !u!4 &2069721879
 Transform:
   m_ObjectHideFlags: 0
