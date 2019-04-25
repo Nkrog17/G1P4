@@ -51,9 +51,9 @@ public class VaseSoundTrigger : MonoBehaviour
 
     IEnumerator waiter()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         Door7.GetComponent<AudioSource>().Play();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         Lamp1.GetComponent<AudioSource>().Play();
         Lamp1.GetComponent<LightController>().lightSwitch();
         yield return new WaitForSeconds(1);
