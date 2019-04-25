@@ -6,7 +6,7 @@ using System.Threading;
 
 public class SerialPortScript : MonoBehaviour
 {
-    Thread myThread; 
+    Thread myThread;
     SerialPort stream = new SerialPort("COM7", 9600);
     List<int> allHR = new List<int>();
     List<int> allGSR = new List<int>();
@@ -50,7 +50,7 @@ public class SerialPortScript : MonoBehaviour
         {
             string value = stream.ReadLine();
             DistributeData(value);
-            
+
         }
     }
 
@@ -71,7 +71,8 @@ public class SerialPortScript : MonoBehaviour
             latestGSR = int.Parse(splitStrings[1]);
             Debug.Log("GSR er " + splitStrings[1]);
         }
-        else {
+        else
+        {
             Debug.Log("Oh shit.");
         }
     }
@@ -79,49 +80,66 @@ public class SerialPortScript : MonoBehaviour
     // Update function runs every frame
     void Update()
     {
-        if(Time.time > 60 && baseLine){
+        if (Time.time > 60 && baseLine)
+        {
             baseLine = false;
             Debug.Log("Baseline er done!");
             Debug.Log(nonsenseGSR);
             Debug.Log(nonsenseHR);
         }
-        if((allGSR.Count > GSRbackRead && allHR.Count > HRbackRead)){
-        //if(allGSR.Count > GSRbackRead){
+        if ((allGSR.Count > GSRbackRead && allHR.Count > HRbackRead))
+        {
+            //if(allGSR.Count > GSRbackRead){
             RegisterSpike();
             allSpikes = HRspikes + GSRspikes;
-        
-    }
 
-    void RegisterSpike()
-    {
-        // Record spikes if base line is no longer being recorded.
-        if(allGSR[allGSR.Count - GSRbackRead] - allGSR[allGSR.Count - 1] > nonsenseGSR){
-            if(!GSRspikeNow){
-                Debug.Log("Spike GSR");
-                GSRspikeNow = true;
-                if(!baseLine){
-                    GSRspikes ++;
-                } else{
-                    nonsenseGSR = allGSR[allGSR.Count - GSRbackRead] - allGSR[allGSR.Count - 1];
-                }
-            }
-        } else {
-            GSRspikeNow = false;
         }
 
-        if(allHR[allHR.Count - 1] - allHR[allHR.Count - HRbackRead] > nonsenseHR){
-            if(!HRspikeNow){
-                Debug.Log("Spike HR");
-                HRspikeNow = true;
-                if(!baseLine){
-                    HRspikes ++;
-                    } else {
+        void RegisterSpike()
+        {
+            // Record spikes if base line is no longer being recorded.
+            if (allGSR[allGSR.Count - GSRbackRead] - allGSR[allGSR.Count - 1] > nonsenseGSR)
+            {
+                if (!GSRspikeNow)
+                {
+                    Debug.Log("Spike GSR");
+                    GSRspikeNow = true;
+                    if (!baseLine)
+                    {
+                        GSRspikes++;
+                    }
+                    else
+                    {
+                        nonsenseGSR = allGSR[allGSR.Count - GSRbackRead] - allGSR[allGSR.Count - 1];
+                    }
+                }
+            }
+            else
+            {
+                GSRspikeNow = false;
+            }
+
+            if (allHR[allHR.Count - 1] - allHR[allHR.Count - HRbackRead] > nonsenseHR)
+            {
+                if (!HRspikeNow)
+                {
+                    Debug.Log("Spike HR");
+                    HRspikeNow = true;
+                    if (!baseLine)
+                    {
+                        HRspikes++;
+                    }
+                    else
+                    {
                         nonsenseHR = allHR[allHR.Count - 1] - allHR[allHR.Count - HRbackRead];
                     }
-                
+
+                }
             }
-        } else {
-            HRspikeNow = false;
+            else
+            {
+                HRspikeNow = false;
+            }
         }
     }
 }

@@ -17,6 +17,7 @@ public class VaseSoundTrigger : MonoBehaviour
     public GameObject Lamp5;
     public GameObject Lamp6;
     public GameObject Lamp7;
+    public GameObject Door7;
 
     public GameObject VaseLamp;
 
@@ -50,7 +51,9 @@ public class VaseSoundTrigger : MonoBehaviour
 
     IEnumerator waiter()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
+        Door7.GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(7);
         Lamp1.GetComponent<AudioSource>().Play();
         Lamp1.GetComponent<LightController>().lightSwitch();
         yield return new WaitForSeconds(1);
