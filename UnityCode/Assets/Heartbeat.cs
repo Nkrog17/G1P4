@@ -6,44 +6,40 @@ using UnityEngine;
 public class Heartbeat : MonoBehaviour
 {
     public AudioSource heartBeat;
-   public float speedRegulator;
+    public float speedRegulator;
     bool playHeartBeat;
-    SerialPortScript heartRate;
-    
-    
+    public GameObject heartRate;
+    float hr;
+    float playTimer = 0f;
+    float timer = 0f;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        //brug waitforseconds
         
-        heartBeat.PlayDelayed(speedRegulator);
-        heartBeat.loop = true;
-
-        //while (playHeartBeat)
-       // {
-            
-            //heartBeat.PlayDelayed(speedRegulator);
-
-        //
-
-        //if (heartRate.latestHR > 80)
-        //{
-           // playHeartBeat = true;
-        //}
-        
-
-
-       // while (playHeartBeat) {
-          //  speedRegulator = heartRate.latestHR;
-        //}
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        
-        
+        hr = heartRate.GetComponent<SerialPortScript>().latestHR;
+        timer += Time.deltaTime;
+        if (timer >= playTimer)
+        {
+            if (hr != 0 && hr < 180)
+            {
+                heartBeat.Play();
+                playTimer = timer + 60 / hr;
+                Debug.Log(hr);
+            }
+            else
+            {
+                Debug.Log("hej");
+            }
+        }
+
+
     }
 }
