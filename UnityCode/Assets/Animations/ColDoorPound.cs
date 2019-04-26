@@ -8,6 +8,7 @@ public class ColDoorPound : MonoBehaviour
     Animator anim;
     public AudioSource pounding;
     bool poundingHavePlayed;
+    public static bool poundEventBool;
     
 
 
@@ -24,11 +25,13 @@ public class ColDoorPound : MonoBehaviour
     }
     void OnTriggerEnter(Collider other){
         anim.SetTrigger("doorPound");
+        
 
         if (!poundingHavePlayed)
         {
             //pounding.PlayDelayed(0.35f);
             poundingHavePlayed = true;
+            poundEventBool = true;
         }
     }
 }

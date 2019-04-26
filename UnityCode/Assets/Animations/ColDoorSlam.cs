@@ -13,6 +13,7 @@ public class ColDoorSlam : MonoBehaviour
     public AudioSource doorSlam;
     public AudioSource jumpscare;
     bool havePlayedJS = false;
+    public static bool doorslamEventBool;
 
 
     Animator anim;
@@ -42,6 +43,7 @@ public class ColDoorSlam : MonoBehaviour
             turnOffLamp1.GetComponent<LightController>().lightSwitch();
            // doorSlam.PlayDelayed(0.4f);
             door4Open = true;
+            doorslamEventBool = true;
 
 
         }

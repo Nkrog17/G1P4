@@ -23,6 +23,8 @@ public class VaseSoundTrigger : MonoBehaviour
 
     public GameObject VaseLamp;
 
+    public static bool vaseEventBool;
+
     private void OnTriggerEnter(Collider collider)
     {
 
@@ -32,6 +34,7 @@ public class VaseSoundTrigger : MonoBehaviour
             vase = GetComponent<AudioSource>();
             vase.Play();
             havePlayed = true;
+            vaseEventBool = true;
 
 
 
