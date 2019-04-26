@@ -29,7 +29,7 @@ public class Heartbeat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
 
     }
 
@@ -52,76 +52,74 @@ public class Heartbeat : MonoBehaviour
         eventTimer += Time.deltaTime;
         //Debug.Log(eventTimer);
         Debug.Log(counter);
-        if (timer >= playTimer)
+
+
+        if (hr != 0 && hr < 180 && bio == true && hrSpike == true || gsrSpike == true)
         {
-            if (hr != 0 && hr < 180 && bio == true && hrSpike == true || gsrSpike == true)
+            if (timer >= playTimer)
             {
                 heartBeat.Play();
                 playTimer = timer + 60 / hr;
-                Debug.Log(hr);
+                //Debug.Log(hr);
             }
+        }
 
-            
-            if (bio == false && coldoorpound==true || doorslam ==true || vaseevent ==true)
 
-                
+
+        if (bio == false && coldoorpound == true || doorslam == true || vaseevent == true)
+        {
+            // skal evt reworkes. Åndsvag metode at få heartbeat til at spille på.
+            if (coldoorpound == true)
             {
-
-                
-                // skal evt reworkes. Åndsvag metode at få heartbeat til at spille på.
-                if (coldoorpound == true)
-                {
-                    counter += Time.deltaTime;
-                }
-                if (counter >= 1 && counter < 1.3)
+                counter += Time.deltaTime;
+                if (counter >= 1 && counter < 6 && timer >= playTimer)
                 {
                     heartBeat.Play();
                     playTimer = timer + 60 / 120f;
-                    
                 }
-
-
-                if (doorslam == true)
-                {
-                    counter2 += Time.deltaTime;
-                }
-                if (counter2 >= 1 && counter2 < 1.3)
-                {
-                    heartBeat.Play();
-                    playTimer = timer + 60 / 120f;
-
-                }
-
-                if (vaseevent == true)
-                {
-                    counter3 += Time.deltaTime;
-                }
-                if (counter3 >= 1 && counter3 < 1.3)
-                {
-                    heartBeat.Play();
-                    playTimer = timer + 60 / 120f;
-
-                }
-                //if ( timer>=2 && timer < 12)
-                //{
-                // heartBeat.Play();
-                //playTimer = timer + 60 / 120f;
-                /* if (eventTimer == 12)
-                 {
-                     eventTimer = 0;
-                 }*/
-                //Debug.Log("playtimer =" + playTimer + " timer =" + eventTimer);
-                //Debug.Log(eventTimer);
-                //}
-                //Debug.Log("hej");
-
             }
-            else
+
+            if (doorslam == true)
             {
-                coldoorpound = false;
-                doorslam = false;
-                vaseevent = false;
+                counter2 += Time.deltaTime;
             }
+            if (counter2 >= 1 && counter2 < 6 && timer >= playTimer)
+            {
+                heartBeat.Play();
+                playTimer = timer + 60 / 120f;
+
+            }
+
+            if (vaseevent == true)
+            {
+                counter3 += Time.deltaTime;
+            }
+            if (counter3 >= 1 && counter3 < 6 && timer >= playTimer)
+            {
+                heartBeat.Play();
+                playTimer = timer + 60 / 120f;
+
+            }
+            //if ( timer>=2 && timer < 12)
+            //{
+            // heartBeat.Play();
+            //playTimer = timer + 60 / 120f;
+            /* if (eventTimer == 12)
+             {
+                 eventTimer = 0;
+             }*/
+            //Debug.Log("playtimer =" + playTimer + " timer =" + eventTimer);
+            //Debug.Log(eventTimer);
+            //}
+            //Debug.Log("hej");
+
+        }
+        else
+        {
+            coldoorpound = false;
+            doorslam = false;
+            vaseevent = false;
+
         }
 
 
