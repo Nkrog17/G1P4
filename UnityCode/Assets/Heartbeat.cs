@@ -36,7 +36,7 @@ public class Heartbeat : MonoBehaviour
             }
             else
             {
-                Debug.Log("hej");
+                //Debug.Log("hej");
             }
         }
 

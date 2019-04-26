@@ -25,6 +25,7 @@ public class SerialPortScript : MonoBehaviour
     bool baseLine = true;
 
     public int latestHR;
+    public int latestHRLog;
     public int latestGSR;
 
     void Start()
@@ -63,6 +64,7 @@ public class SerialPortScript : MonoBehaviour
         {
             allHR.Add(int.Parse(splitStrings[1]));
             latestHR = int.Parse(splitStrings[1]);
+            latestHRLog = int.Parse(splitStrings[1]);
             Debug.Log("HR er " + splitStrings[1]);
         }
         else if (splitStrings[0].Equals("GSR"))
