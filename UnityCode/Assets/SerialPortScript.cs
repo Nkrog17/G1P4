@@ -7,7 +7,7 @@ using System.Threading;
 public class SerialPortScript : MonoBehaviour
 {
     Thread myThread; 
-    SerialPort stream = new SerialPort("COM7", 9600);
+    SerialPort stream = new SerialPort("COM5", 9600);
     List<int> allHR = new List<int>();
     List<int> allGSR = new List<int>();
     List<int> HRtime = new List<int>();
