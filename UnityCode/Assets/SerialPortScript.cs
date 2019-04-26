@@ -89,6 +89,10 @@ public class SerialPortScript : MonoBehaviour
     // Update function runs every frame
     void Update()
     {
+    	if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
         if(Time.time > 60 && baseLine){
             baseLine = false;
             Debug.Log("Baseline er done!");
