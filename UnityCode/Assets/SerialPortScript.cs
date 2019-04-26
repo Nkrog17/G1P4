@@ -24,9 +24,12 @@ public class SerialPortScript : MonoBehaviour
     int nonsenseHR = 5;
     bool baseLine = true;
 
+    public bool biofeedback = true;
+
     public int latestHR;
     public int latestHRLog;
     public int latestGSR;
+    public int latestGSRLog;
 
     void Start()
     {
@@ -63,14 +66,19 @@ public class SerialPortScript : MonoBehaviour
         if (splitStrings[0].Equals("HR"))
         {
             allHR.Add(int.Parse(splitStrings[1]));
-            latestHR = int.Parse(splitStrings[1]);
+            if(biofeedback){
+            	latestHR = int.Parse(splitStrings[1]);
+            }
             latestHRLog = int.Parse(splitStrings[1]);
             Debug.Log("HR er " + splitStrings[1]);
         }
         else if (splitStrings[0].Equals("GSR"))
         {
             allGSR.Add(int.Parse(splitStrings[1]));
-            latestGSR = int.Parse(splitStrings[1]);
+            if(biofeedback){
+            	latestGSR = int.Parse(splitStrings[1]);
+            }
+            latestGSRLog = int.Parse(splitStrings[1]);
             Debug.Log("GSR er " + splitStrings[1]);
         }
         else {

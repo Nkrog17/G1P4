@@ -24,7 +24,7 @@ public class Logfile : MonoBehaviour
          
             if (timer >= newTimer) { 
             SPSHR = serialport.GetComponent<SerialPortScript>().latestHRLog;
-            SPSGSR = serialport.GetComponent<SerialPortScript>().latestGSR;
+            SPSGSR = serialport.GetComponent<SerialPortScript>().latestGSRLog;
             WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
             Debug.Log("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
             newTimer = timer+1;
