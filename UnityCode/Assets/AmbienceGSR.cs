@@ -6,8 +6,9 @@ public class AmbienceGSR : MonoBehaviour
 {
 
     public AudioSource ambience;
-    public GameObject gsrReading;
+    public GameObject serialPort;
     float gsr;
+    float avgblgsr;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,16 +19,22 @@ public class AmbienceGSR : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gsr = gsrReading.GetComponent<SerialPortScript>().latestGSR;
+        avgblgsr = serialPort.GetComponent<SerialPortScript>().avgGSRbaseLine;
+        gsr = serialPort.GetComponent<SerialPortScript>().latestGSR;
 
-        //if (spike)
-        //{
-        //  ambience.volume = 1;
-        // }
-        // else {
-        // ambience.volume=0.5f;
-   // }
+        if (serialPort.GetComponent<SerialPortScript>().GSRspikeNow)
+        {
+            ambience.volume = 1 - (avgblgsr/100*gsr)+0.25f;
+        }
+        else
+        {
+            ambience.volume = 0.5f;
+        }
 
+        if (ambience.volume > 1)
+        {
+            ambience.volume = 1;
+        }
     }
 
     
