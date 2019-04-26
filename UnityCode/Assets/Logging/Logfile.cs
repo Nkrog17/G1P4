@@ -23,23 +23,36 @@ public class Logfile : MonoBehaviour
     private void Update()
     {
         SpikeGSR = serialport.GetComponent<SerialPortScript>().GSRspikeNow;
+        SpikeHR = serialport.GetComponent<SerialPortScript>().HRspikeNow;
 
         timer += Time.deltaTime;
-         
-            if (timer >= newTimer) { 
+
+        if (timer >= newTimer)
+        {
             SPSHR = serialport.GetComponent<SerialPortScript>().latestHRLog;
             SPSGSR = serialport.GetComponent<SerialPortScript>().latestGSRLog;
             WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
             Debug.Log("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
-            if ()
+
+
+
+
+            newTimer = timer + 1;
+
+        }
+        if (SpikeGSR || SpikeHR)
+        {
+            if (SpikeHR)
             {
-
+                WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer + "spikeHR");
             }
-
-            newTimer = timer+1;
-
+            if (SpikeGSR)
+            {
+                WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer + "spikeGSR");
             }
-       
+        }
+
+
     }
 
     public void WriteToFile(string message)

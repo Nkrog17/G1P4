@@ -32,7 +32,7 @@ public class Heartbeat : MonoBehaviour
             {
                 heartBeat.Play();
                 playTimer = timer + 60 / hr;
-                Debug.Log(hr);
+                //Debug.Log(hr);
             }
             else
             {
