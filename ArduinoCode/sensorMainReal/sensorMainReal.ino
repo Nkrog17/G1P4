@@ -27,9 +27,9 @@ void sum(){
   if (startBool) {
     HR = (60 * refreshR * 1000) / (temp[refreshR] - temp[0]); 
     Serial.print("HR=");
-    Serial.print(HR);
-    Serial.print(" ");
-    Serial.println(millis());
+    Serial.println(HR);
+    //Serial.print(" ");
+    //Serial.println(millis());
     Serial.flush();
   }
   startBool = true; 
