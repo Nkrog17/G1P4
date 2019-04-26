@@ -31,6 +31,8 @@ public class SerialPortScript : MonoBehaviour
     public int latestGSR;
     public int latestGSRLog;
 
+    public float avgGSRbaseLine;
+
     void Start()
     {
         //Start Arduino reading thread
@@ -117,6 +119,13 @@ public class SerialPortScript : MonoBehaviour
                     GSRspikes ++;
                 } else{
                     nonsenseGSR = allGSR[allGSR.Count - GSRbackRead] - allGSR[allGSR.Count - 1];
+
+                    //find average GSR in baseline
+                    int sum = 0;
+                    for(int i = 0; i < allGSR.Count; i++){
+                    	sum += allGSR[i];
+                    }
+                    avgGSRbaseLine = sum / allGSR.Count;
                 }
             }
         } else {
