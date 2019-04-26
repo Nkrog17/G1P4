@@ -16,8 +16,8 @@ public class SerialPortScript : MonoBehaviour
     int GSRspikes;
     int HRspikes;
     public int allSpikes;
-    bool GSRspikeNow = false;
-    bool HRspikeNow = false;
+    public bool GSRspikeNow = false;
+    public bool HRspikeNow = false;
     int GSRbackRead = 10;
     int HRbackRead = 3;
     int nonsenseGSR = 5;

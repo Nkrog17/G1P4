@@ -10,6 +10,8 @@ public class Logfile : MonoBehaviour
     int SPSGSR;
     float timer = 0.0f;
     float newTimer = 0.0f;
+    bool SpikeGSR;
+    bool SpikeHR;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,8 @@ public class Logfile : MonoBehaviour
     }
     private void Update()
     {
+        SpikeGSR = serialport.GetComponent<SerialPortScript>().GSRspikeNow;
+
         timer += Time.deltaTime;
          
             if (timer >= newTimer) { 
@@ -27,6 +31,11 @@ public class Logfile : MonoBehaviour
             SPSGSR = serialport.GetComponent<SerialPortScript>().latestGSRLog;
             WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
             Debug.Log("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
+            if ()
+            {
+
+            }
+
             newTimer = timer+1;
 
             }
