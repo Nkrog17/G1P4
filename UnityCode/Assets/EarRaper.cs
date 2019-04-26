@@ -25,5 +25,6 @@ public class EarRaper : MonoBehaviour
     	if(spikes >= spikeLimit){
     		source.GetComponent<AudioSource>().volume = 1;
     	}
+    	SerialPort.ResetSpikes();
     }
 }
