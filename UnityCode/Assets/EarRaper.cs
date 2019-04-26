@@ -7,7 +7,6 @@ public class EarRaper : MonoBehaviour
 	public AudioSource source;
 	public GameObject SerialPort;
 	public int spikeLimit;
-    public CameraShake cameraShake;
 
     // Start is called before the first frame update
     void Start()
@@ -22,11 +21,9 @@ public class EarRaper : MonoBehaviour
     }
 
     void OnTriggerEnter(){
-    	int spikes = 10; //SerialPort.GetComponent<SerialPortScript>().allSpikes
-    	if(spikes > spikeLimit){
+    	int spikes = SerialPort.GetComponent<SerialPortScript>().allSpikes;
+    	if(spikes >= spikeLimit){
     		source.GetComponent<AudioSource>().volume = 1;
     	}
-    	source.Play();
-        StartCoroutine(cameraShake.Shake(.55f, .4f));
     }
 }
