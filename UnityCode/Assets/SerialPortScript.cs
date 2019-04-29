@@ -22,16 +22,16 @@ public class SerialPortScript : MonoBehaviour
     int HRbackRead = 3;
     int nonsenseGSR = 5;
     int nonsenseHR = 5;
-    bool baseLine = true;
+    public static bool baseLine = true;
+    public static bool biofeedback = false;
 
-    public static bool biofeedback = true;
-
+    bool stopAvgGSR;
     public int latestHR;
     public int latestHRLog;
     public int latestGSR;
     public int latestGSRLog;
 
-    public float avgGSRbaseLine;
+    public float avgGSRbaseLine = 0.0f;
 
     void Start()
     {
@@ -106,6 +106,12 @@ public class SerialPortScript : MonoBehaviour
             RegisterSpike();
             allSpikes = HRspikes + GSRspikes;
         }
+        if (!baseLine && !stopAvgGSR)
+        {
+            avgBLGSR();
+            stopAvgGSR = true;
+        }
+
     }
 
     void RegisterSpike()
@@ -121,11 +127,14 @@ public class SerialPortScript : MonoBehaviour
                     nonsenseGSR = allGSR[allGSR.Count - GSRbackRead] - allGSR[allGSR.Count - 1];
 
                     //find average GSR in baseline
-                    int sum = 0;
+                    /*
+                    float sum = 0f;
                     for(int i = 0; i < allGSR.Count; i++){
                     	sum += allGSR[i];
                     }
                     avgGSRbaseLine = sum / allGSR.Count;
+                    Debug.Log("SPS avgGSR = " + avgGSRbaseLine);
+                    */
                 }
             }
         } else {
@@ -151,5 +160,16 @@ public class SerialPortScript : MonoBehaviour
     	allSpikes = 0;
     	HRspikes = 0;
     	GSRspikes = 0;
+    }
+    void avgBLGSR()
+    {
+        float sum = 0f;
+        for (int i = 0; i < allGSR.Count; i++)
+        {
+            sum += allGSR[i];
+        }
+        avgGSRbaseLine = sum / allGSR.Count;
+        Debug.Log("SPS avgGSR = " + avgGSRbaseLine);
+
     }
 }

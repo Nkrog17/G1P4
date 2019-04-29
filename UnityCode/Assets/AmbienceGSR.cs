@@ -9,6 +9,7 @@ public class AmbienceGSR : MonoBehaviour
     public GameObject serialPort;
     float gsr;
     float avgBlGsr;
+    float ambVolume = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,22 +25,25 @@ public class AmbienceGSR : MonoBehaviour
 
         if (serialPort.GetComponent<SerialPortScript>().GSRspikeNow)
         {
-            ambience.volume = 1 - ((avgBlGsr/100)*gsr)+0.25f;
+
+            ambVolume = 1 - ((avgBlGsr/100)*gsr)+0.25f;
         }
         else
         {
-            ambience.volume = 0.25f;
+            ambVolume = 0.25f;
         }
-
-        if (ambience.volume > 1)
+        if (ambVolume > 1)
         {
-            ambience.volume = 1;
+            ambVolume = 1;
         }
+        Debug.Log("ambVolume = " + ambVolume);
+        ambience.volume = ambVolume;
+        Debug.Log("realAmbVolume = " + ambience.volume);
     }
 
     
 
-    private void OnTriggerEnter(Collider collider)
+    private void OnTriggerEnter(Collider other)
     {
         
         ambience.Play();
