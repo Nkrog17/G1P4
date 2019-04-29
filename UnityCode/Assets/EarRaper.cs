@@ -22,9 +22,10 @@ public class EarRaper : MonoBehaviour
 
     void OnTriggerEnter(){
     	int spikes = SerialPort.GetComponent<SerialPortScript>().allSpikes;
+
     	if(spikes >= spikeLimit){
     		source.GetComponent<AudioSource>().volume = 1;
     	}
-    	SerialPort.ResetSpikes();
+        SerialPort.GetComponent<SerialPortScript>().ResetSpikes();
     }
 }

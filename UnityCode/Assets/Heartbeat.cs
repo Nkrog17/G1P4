@@ -19,6 +19,10 @@ public class Heartbeat : MonoBehaviour
     bool coldoorpound;
     bool doorslam;
     bool vaseevent;
+    bool stopPound;
+    bool stopSlam;
+    bool stopVase;
+
     float counter;
     float counter2;
     float counter3;
@@ -29,99 +33,118 @@ public class Heartbeat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        bio = SerialPortScript.biofeedback;
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (bio)
+        {
+            HRbiofeedback();
+        }
+        else
+        {
+            HRnobiofeedback();
+            
+        }
+        
+
+
+
+        
+
+
+    }
+    void HRbiofeedback()
+    {
         hr = heartRate.GetComponent<SerialPortScript>().latestHR;
-        //bio = heartRate.GetComponent<SerialPortScript>().biofeedback;
         hrSpike = heartRate.GetComponent<SerialPortScript>().HRspikeNow;
         gsrSpike = heartRate.GetComponent<SerialPortScript>().GSRspikeNow;
-        coldoorpound = ColDoorPound.poundEventBool;
-        doorslam = ColDoorSlam.doorslamEventBool;
-        vaseevent = VaseSoundTrigger.vaseEventBool;
-        bio = SerialPortScript.biofeedback;
-
-        Debug.Log("vaseevent is =" + vaseevent);
-
 
         timer += Time.deltaTime;
         eventTimer += Time.deltaTime;
-        //Debug.Log(eventTimer);
-        Debug.Log(counter);
+        
 
 
-        if (hr != 0 && hr < 180 && bio == true && hrSpike == true || gsrSpike == true)
+        if (hr != 0 && hr < 180 && hrSpike == true || gsrSpike == true)
         {
             if (timer >= playTimer)
             {
                 heartBeat.Play();
                 playTimer = timer + 60 / hr;
-                //Debug.Log(hr);
             }
         }
+    }
 
-
-
-        if (bio == false && coldoorpound == true || doorslam == true || vaseevent == true)
+    void HRnobiofeedback()
+    {
+        if (!stopPound)
         {
-            // skal evt reworkes. Åndsvag metode at få heartbeat til at spille på.
+            coldoorpound = ColDoorPound.poundEventBool;
+        }
+        if (!stopSlam)
+        {
+            doorslam = ColDoorSlam.doorslamEventBool;
+        }
+        if (stopVase) {
+            vaseevent = VaseSoundTrigger.vaseEventBool;
+        }
+
+        if (coldoorpound == true || doorslam == true || vaseevent == true)
+        {
             if (coldoorpound == true)
             {
                 counter += Time.deltaTime;
-                if (counter >= 1 && counter < 6 && timer >= playTimer)
+
+                if (counter >= 1 && counter < 8 && counter >= playTimer)
                 {
                     heartBeat.Play();
-                    playTimer = timer + 60 / 120f;
+                    playTimer = counter + 60 / 120f;
+                    Debug.Log("hey");
+                }
+                else if(counter >=8)
+                {
+                    playTimer = 0;
+                    stopPound = true;
                 }
             }
 
             if (doorslam == true)
             {
                 counter2 += Time.deltaTime;
-            }
-            if (counter2 >= 1 && counter2 < 6 && timer >= playTimer)
-            {
-                heartBeat.Play();
-                playTimer = timer + 60 / 120f;
 
+                if (counter2 >= 1 && counter2 < 8 && counter2 >= playTimer)
+                {
+                    Debug.Log(playTimer);
+                    heartBeat.Play();
+                    playTimer = counter2 + 60 / 120f;
+                    
+                }
+                else if(counter2 >= 8)
+                {
+                    playTimer = 0;
+                    stopSlam = true;
+                }
+                
             }
 
             if (vaseevent == true)
             {
                 counter3 += Time.deltaTime;
+
+                if (counter3 >= 1 && counter3 < 8 && counter3 >= playTimer)
+                {
+                    heartBeat.Play();
+                    playTimer = counter3 + 60 / 120f;
+                    Debug.Log("hey");
+                }
+                else if(counter3 >= 8){
+                    playTimer = 0;
+                    stopVase = true;
+                }
             }
-            if (counter3 >= 1 && counter3 < 6 && timer >= playTimer)
-            {
-                heartBeat.Play();
-                playTimer = timer + 60 / 120f;
-
-            }
-            //if ( timer>=2 && timer < 12)
-            //{
-            // heartBeat.Play();
-            //playTimer = timer + 60 / 120f;
-            /* if (eventTimer == 12)
-             {
-                 eventTimer = 0;
-             }*/
-            //Debug.Log("playtimer =" + playTimer + " timer =" + eventTimer);
-            //Debug.Log(eventTimer);
-            //}
-            //Debug.Log("hej");
-
         }
-        else
-        {
-            coldoorpound = false;
-            doorslam = false;
-            vaseevent = false;
-
-        }
-
-
     }
 }
