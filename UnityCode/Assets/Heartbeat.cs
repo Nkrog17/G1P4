@@ -88,7 +88,7 @@ public class Heartbeat : MonoBehaviour
         {
             doorslam = ColDoorSlam.doorslamEventBool;
         }
-        if (stopVase) {
+        if (!stopVase) {
             vaseevent = VaseSoundTrigger.vaseEventBool;
         }
 
@@ -102,11 +102,11 @@ public class Heartbeat : MonoBehaviour
                 {
                     heartBeat.Play();
                     playTimer = counter + 60 / 120f;
-                    Debug.Log("hey");
                 }
                 else if(counter >=8)
                 {
                     playTimer = 0;
+                    coldoorpound = false;
                     stopPound = true;
                 }
             }
@@ -117,14 +117,16 @@ public class Heartbeat : MonoBehaviour
 
                 if (counter2 >= 1 && counter2 < 8 && counter2 >= playTimer)
                 {
-                    Debug.Log(playTimer);
+                   
+                    
                     heartBeat.Play();
                     playTimer = counter2 + 60 / 120f;
-                    
+                   
                 }
                 else if(counter2 >= 8)
                 {
                     playTimer = 0;
+                    doorslam = false;
                     stopSlam = true;
                 }
                 
@@ -133,15 +135,16 @@ public class Heartbeat : MonoBehaviour
             if (vaseevent == true)
             {
                 counter3 += Time.deltaTime;
-
+             
                 if (counter3 >= 1 && counter3 < 8 && counter3 >= playTimer)
                 {
                     heartBeat.Play();
                     playTimer = counter3 + 60 / 120f;
-                    Debug.Log("hey");
+                  
                 }
                 else if(counter3 >= 8){
                     playTimer = 0;
+                    vaseevent = false;
                     stopVase = true;
                 }
             }
