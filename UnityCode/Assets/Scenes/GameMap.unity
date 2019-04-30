@@ -30979,6 +30979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363e2ef3d8d73704aa213d93aae37b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serialPort: {fileID: 1374880558}
   ambience: {fileID: 0}
 --- !u!82 &1661712300
 AudioSource:
@@ -30990,7 +30991,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c6643e3c226830846837da4eda34cbe4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1dfb209d657b0914b8db033b67b1d500, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -38175,7 +38176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 936299f44bb795d4687692db2b207ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: 0.1
+  volume: 0.5
 --- !u!4 &2009209893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 489956, guid: 56f7f75a5a759294eba64b11cf7ac626,
