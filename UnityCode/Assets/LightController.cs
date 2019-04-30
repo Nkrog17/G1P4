@@ -76,4 +76,9 @@ public class LightController : MonoBehaviour
 
         }
     }
+    public void lightOff()
+    {
+        childLight.GetComponent<Light>().range = 0;
+        GetComponent<Renderer>().material = offMaterial;
+    }
 }

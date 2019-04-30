@@ -16,7 +16,9 @@ public class HallWayGirl : MonoBehaviour
     public GameObject Lamp5;
 
     public GameObject Bitch;
-   // bool lamp5flicker;
+    public GameObject wallBlocker;
+    // bool lamp5flicker;
+    public static bool passBool = false;
 
     
 
@@ -55,6 +57,7 @@ public class HallWayGirl : MonoBehaviour
         yield return new WaitForSeconds(2);
         Bitch.SetActive(true);
         yield return new WaitForSeconds(3);
+        passBool = true;
         Lamp5.GetComponent<LightController>().lightSwitch();
         Lamp5.GetComponent<AudioSource>().Play();
         Lamp5.GetComponent<LightController>().flicker = true;
@@ -65,6 +68,9 @@ public class HallWayGirl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+      if(passBool == true)
+        {
+            wallBlocker.SetActive(false);
+        }
     }
 }

@@ -30,12 +30,12 @@ public class Text_script : MonoBehaviour
             stopText += Time.deltaTime;
 
             if (stopText >= 5) {
-                Debug.Log("put them up punk");
+                
                 mText.SetActive(false);
                 textNotShown = true;
             }
 
         }
-        Debug.Log(stopText);
+       
     }
 }
