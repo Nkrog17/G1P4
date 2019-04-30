@@ -169,7 +169,7 @@ public class SerialPortScript : MonoBehaviour
             sum += allGSR[i];
         }
         avgGSRbaseLine = sum / allGSR.Count;
-        Debug.Log("SPS avgGSR = " + avgGSRbaseLine);
+        //Debug.Log("SPS avgGSR = " + avgGSRbaseLine);
 
     }
 }
