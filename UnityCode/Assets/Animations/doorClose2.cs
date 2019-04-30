@@ -8,6 +8,7 @@ public class doorClose2 : MonoBehaviour
     Animator anim;
     public AudioSource knirk;
     bool knirkHavePlayed = false;
+    public static bool isClosed;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class doorClose2 : MonoBehaviour
             {
                 knirk.PlayDelayed(0.4f);
                 knirkHavePlayed = true;
+                isClosed = true;
             }
         }
     }
