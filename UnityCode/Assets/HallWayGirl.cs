@@ -15,28 +15,56 @@ public class HallWayGirl : MonoBehaviour
     public GameObject Lamp4;
     public GameObject Lamp5;
 
+    public GameObject Bitch;
+   // bool lamp5flicker;
+
+    
+
+
+
+
 
     private void OnTriggerEnter(Collider collider)
     {
-        light = GetComponent<AudioSource>();
-        light.Play();
+        if (!havePlayed)
+        {
 
-        Lamp1.GetComponent<LightController>().lightSwitch();
-        Lamp2.GetComponent<LightController>().lightSwitch();
-        Lamp3.GetComponent<LightController>().lightSwitch();
-        Lamp4.GetComponent<LightController>().lightSwitch();
-        Lamp5.GetComponent<LightController>().lightSwitch();
+            light = GetComponent<AudioSource>();
+            light.Play();
 
+            Lamp1.GetComponent<LightController>().lightSwitch();
+            Lamp2.GetComponent<LightController>().lightSwitch();
+            Lamp3.GetComponent<LightController>().lightSwitch();
+            Lamp4.GetComponent<LightController>().lightSwitch();
+            Lamp5.GetComponent<LightController>().lightSwitch();
+
+            havePlayed = true;
+
+
+            StartCoroutine(waiter());
+        }
     }
         // Start is called before the first frame update
         void Start()
     {
-        
+        Bitch.SetActive(false);
     }
 
+    IEnumerator waiter()
+    {
+        yield return new WaitForSeconds(2);
+        Bitch.SetActive(true);
+        yield return new WaitForSeconds(3);
+        Lamp5.GetComponent<LightController>().lightSwitch();
+        Lamp5.GetComponent<AudioSource>().Play();
+        Lamp5.GetComponent<LightController>().flicker = true;
+        
+
+
+    }
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
 }
