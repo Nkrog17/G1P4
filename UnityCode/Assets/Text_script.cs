@@ -8,6 +8,8 @@ public class Text_script : MonoBehaviour
     public TextMesh writeText;
 
     float awakeTime = 0f;
+    bool textNotShown = false;
+    float stopText = 0.0f;
 
     // Start is called before the first frame update
     private void Start()
@@ -19,10 +21,21 @@ public class Text_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //SerialPortScript.baseLine == false
-        if (SerialPortScript.baseLine == false)
+      
+        if (SerialPortScript.baseLine == false && textNotShown == false)
         {
+            
             mText.SetActive(true);
+
+            stopText += Time.deltaTime;
+
+            if (stopText >= 5) {
+                Debug.Log("put them up punk");
+                mText.SetActive(false);
+                textNotShown = true;
+            }
+
         }
+        Debug.Log(stopText);
     }
 }
