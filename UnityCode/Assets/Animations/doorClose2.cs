@@ -17,20 +17,17 @@ public class doorClose2 : MonoBehaviour
         anim = door.GetComponent<Animator>();
     }
 
-    
+
 
     private void OnTriggerEnter(Collider other)
     {
-        if (ColDoorSlam.door4Open == true)
+        if (!knirkHavePlayed)
         {
             anim.SetTrigger("doorClose2");
-
-            if (!knirkHavePlayed)
-            {
-                knirk.PlayDelayed(0.4f);
-                knirkHavePlayed = true;
-                isClosed = true;
-            }
+            knirk.PlayDelayed(0.4f);
+            knirkHavePlayed = true;
+            isClosed = true;
         }
+
     }
 }

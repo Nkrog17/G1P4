@@ -19,6 +19,7 @@ public class HallWayGirl : MonoBehaviour
     public GameObject wallBlocker;
     // bool lamp5flicker;
     public static bool passBool = false;
+    public static bool ladyEventStart = false;
 
     
 
@@ -30,7 +31,7 @@ public class HallWayGirl : MonoBehaviour
     {
         if (!havePlayed)
         {
-
+            ladyEventStart = true;
             light = GetComponent<AudioSource>();
             light.Play();
 

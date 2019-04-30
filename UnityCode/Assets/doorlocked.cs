@@ -12,7 +12,7 @@ public class doorlocked : MonoBehaviour
     void Start()
     {
 
-        lockedDoor = door.GetComponent<AudioSource>();
+        lockedDoor = lockedDoor.GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -20,6 +20,10 @@ public class doorlocked : MonoBehaviour
         if (doorClose2.isClosed == true)
         {
             playLocked = true;
+        }
+        if (doorClose2.isClosed == false)
+        {
+            playLocked = false;
         }
     }
     // Update is called once per frame
