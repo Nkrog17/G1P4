@@ -16,7 +16,7 @@ public class LockedDoor : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        
+        if(ColDoorSlam.door4Open == true)
          lockedDoor.Play();
         
     }

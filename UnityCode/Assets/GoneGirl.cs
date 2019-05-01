@@ -9,11 +9,16 @@ public class GoneGirl : MonoBehaviour
     public GameObject door;
     public AudioSource knirk;
     public GameObject door9;
+    public GameObject door4;
+    public GameObject door7squeak;
     Animator anim;
     Animator anim9;
+    Animator anim4;
+    public AudioSource squeak;
     float timer = 0f;
     bool startTimer;
     bool knirkHavePlayed;
+    bool havePlayedGoneGirl;
     
     bool havePlayed;
     public static bool door9IsClosed = true;
@@ -26,6 +31,10 @@ public class GoneGirl : MonoBehaviour
         anim = door.GetComponent<Animator>();
         
         anim9 = door9.GetComponent<Animator>();
+
+        anim4 = door4.GetComponent<Animator>();
+
+        squeak = door7squeak.GetComponent<AudioSource>();
     }
 
 
@@ -41,6 +50,7 @@ public class GoneGirl : MonoBehaviour
             lamp.GetComponent<LightController>().lightOff();
             havePlayed = true;
             startTimer = true;
+            
         }
     }
 
@@ -52,11 +62,18 @@ public class GoneGirl : MonoBehaviour
            
             if (timer >= 1.9f && timer <= 2.1f)
             {
-                ladyEventEnd = true;
-                anim.SetTrigger("doorOpen");
-                doorClose2.isClosed = false;
-                anim9.SetTrigger("door9Open");
-                door9IsClosed = false;
+                if (!havePlayedGoneGirl)
+                {
+                    ladyEventEnd = true;
+                    anim.SetTrigger("doorOpen");
+                    squeak.PlayDelayed(0.4f);
+                    doorClose2.isClosed = false;
+                    anim9.SetTrigger("door9Open");
+                    door9IsClosed = false;
+                    anim4.SetTrigger("door4Close");
+                    havePlayedGoneGirl = true;
+                    ColDoorSlam.door4Open = false;
+                }
             }
         }
     }
