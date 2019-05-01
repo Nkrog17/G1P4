@@ -10,16 +10,20 @@ public class Logfile : MonoBehaviour
     int SPSGSR;
     float timer = 0.0f;
     float newTimer = 0.0f;
+    float ladyTimer = 0f;
+    float newLadyTimer = 0f;
     bool SpikeGSR;
     bool SpikeHR;
 
     bool coldoorpound;
     bool doorslam;
     bool vaseevent;
+    bool ladyEvent;
 
     bool stopPound;
     bool stopSlam;
     bool stopVase;
+    bool stopLady;
 
 
 
@@ -69,8 +73,12 @@ public class Logfile : MonoBehaviour
         {
             vaseevent = VaseSoundTrigger.vaseEventBool;
         }
+        if (!stopLady)
+        {
+            ladyEvent = HallWayGirl.ladyEventStart;
+        }
 
-        if (coldoorpound == true || doorslam == true || vaseevent == true)
+        if (coldoorpound == true || doorslam == true || vaseevent == true || ladyEvent == true)
         {
             eventTrigger();
         }
@@ -100,6 +108,20 @@ public class Logfile : MonoBehaviour
             WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer + " VaseEvent");
             vaseevent = false;
             stopVase = true;
+        }
+        if (ladyEvent)
+        {
+            ladyTimer += Time.deltaTime;
+            if (ladyTimer >= newLadyTimer) {
+                WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer + " LadyEvent");
+                newLadyTimer = ladyTimer + 1;
+            }
+            if (GoneGirl.ladyEventEnd)
+            {
+                ladyEvent = false;
+                stopLady = true;
+                
+            }
         }
     }
     public void WriteToFile(string message)

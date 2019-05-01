@@ -12252,3 +12252,698 @@ HR=0 GSR=0 (X,Y,Z)=(-18.4, 1.1, -10.4) Time=25.20203
 HR=0 GSR=0 (X,Y,Z)=(-20.8, 1.1, -9.5) Time=25.74673VaseEvent
 HR=0 GSR=0 (X,Y,Z)=(-25.3, 1.1, -9.6) Time=26.2084
 HR=0 GSR=0 (X,Y,Z)=(-31.5, 1.1, -9.4) Time=27.22353
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.3, 21.2) Time=0.02
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=1.066182
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=2.139597
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=3.213433
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=4.257328
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=5.273581
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=6.285597
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=7.297274
+HR=0 GSR=0 (X,Y,Z)=(-24.2, 1.1, 21.8) Time=8.344151
+HR=0 GSR=0 (X,Y,Z)=(-13.4, 1.1, 21.7) Time=9.423827
+HR=0 GSR=0 (X,Y,Z)=(-4.3, 1.1, 20.5) Time=10.51785
+HR=0 GSR=0 (X,Y,Z)=(-3.0, 1.1, 19.8) Time=10.69612 PoundEvent
+HR=0 GSR=0 (X,Y,Z)=(3.7, 1.1, 23.1) Time=11.5853
+HR=0 GSR=0 (X,Y,Z)=(12.7, 1.1, 20.4) Time=12.59016
+HR=0 GSR=0 (X,Y,Z)=(14.3, 1.1, 20.4) Time=13.65819
+HR=0 GSR=0 (X,Y,Z)=(14.3, 1.1, 17.8) Time=14.70852
+HR=0 GSR=0 (X,Y,Z)=(13.0, 1.1, 8.5) Time=15.78986
+HR=0 GSR=0 (X,Y,Z)=(15.2, 1.1, 1.6) Time=16.86575
+HR=0 GSR=0 (X,Y,Z)=(15.2, 1.1, 1.6) Time=17.9101
+HR=0 GSR=0 (X,Y,Z)=(8.2, 1.1, 2.0) Time=18.92227
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=19.92365
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=20.96397
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=22.07868
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=23.12791
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=24.22048
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=25.27771
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=26.35486
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=27.36566
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=28.46004
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=29.50321
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=30.60723
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=31.6875
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.1) Time=32.7712
+HR=0 GSR=0 (X,Y,Z)=(-1.8, 1.1, 3.1) Time=33.77183
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, 5.9) Time=34.83718
+HR=0 GSR=0 (X,Y,Z)=(-13.7, 1.1, 14.1) Time=35.80313 SlamEvent
+HR=0 GSR=0 (X,Y,Z)=(-14.5, 1.1, 14.2) Time=35.89004
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, 13.3) Time=36.95882
+HR=0 GSR=0 (X,Y,Z)=(-9.0, 1.1, 9.5) Time=38.01144
+HR=0 GSR=0 (X,Y,Z)=(-8.9, 1.1, 8.2) Time=39.06734
+HR=0 GSR=0 (X,Y,Z)=(-11.5, 1.1, 1.5) Time=40.15519
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, 1.5) Time=41.18398
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -0.6) Time=42.22886
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -2.6) Time=43.25128
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -2.6) Time=44.25194
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -2.6) Time=45.27854
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -2.6) Time=46.34682
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -2.6) Time=47.38048
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -2.6) Time=48.47939
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -2.6) Time=49.52096
+HR=0 GSR=0 (X,Y,Z)=(-10.1, 1.1, -10.6) Time=50.59292
+HR=0 GSR=0 (X,Y,Z)=(-9.9, 1.1, -19.8) Time=51.60446
+HR=0 GSR=0 (X,Y,Z)=(-9.8, 1.1, -22.4) Time=51.86439 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.8, 1.1, -23.0) Time=51.9248 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.8, 1.1, -23.2) Time=51.99077 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.7, 1.1, -23.2) Time=52.05066 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.7, 1.1, -23.2) Time=52.10896 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.7, 1.1, -23.2) Time=52.16726 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.7, 1.1, -23.2) Time=52.23713 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.29968 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.36155 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.42299 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.4844 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.5459 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.60562
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.60562 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.66811 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.72741 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.78458 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.85079 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=52.92197 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.5, 1.1, -23.2) Time=53.01133 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.5, 1.1, -23.2) Time=53.07412 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.5, 1.1, -23.2) Time=53.13224 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.5, 1.1, -23.2) Time=53.19385 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.4, 1.1, -23.2) Time=53.25586 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.4, 1.1, -23.2) Time=53.31448 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.4, 1.1, -23.2) Time=53.37276 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.4, 1.1, -23.2) Time=53.43089 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.3, 1.1, -23.2) Time=53.49406 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.3, 1.1, -23.2) Time=53.56334 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.3, 1.1, -23.2) Time=53.62814
+HR=0 GSR=0 (X,Y,Z)=(-9.3, 1.1, -23.2) Time=53.62814 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.4, 1.1, -23.2) Time=53.70633 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -23.2) Time=53.77337 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.9, 1.1, -23.2) Time=53.83274 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -23.2) Time=53.89569 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=53.95971 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.2, 1.1, -23.2) Time=54.0248 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.2, 1.1, -23.2) Time=54.09034 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.2, 1.1, -23.2) Time=54.16998 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.2, 1.1, -23.2) Time=54.25496 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.2, 1.1, -23.2) Time=54.31596 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -23.2) Time=54.38608 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -23.2) Time=54.44667 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -23.2) Time=54.50189 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -23.2) Time=54.56447 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=54.63096
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=54.63096 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=54.69239 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=54.7508 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=54.80949 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=54.87025 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=54.92754 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=54.98512 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.04059 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.10149 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.1571 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.2174 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.2775 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.33831 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.3975 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.46645 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.54412 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.62026 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.68188
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.68188 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.73798 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.79065 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.85392 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.91159 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=55.96949 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.02634 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.092 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.16649 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.22538 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.28807 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.3413 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.39685 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.45647 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.51999 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.57659 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.63583 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.70414
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.70414 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.77789 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.84015 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.90152 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=56.96177 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=57.03224 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=57.09911 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=57.18563 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=57.25779 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=57.32055 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=57.38685 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=57.45431 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.2) Time=57.53142 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -23.8) Time=57.59673 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -24.6) Time=57.66481 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -25.2) Time=57.7262
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -25.2) Time=57.7262 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -25.8) Time=57.79146 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -26.4) Time=57.85508 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -27.2) Time=57.9219 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -27.8) Time=57.98974 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -28.6) Time=58.07388 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -29.6) Time=58.16088 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -30.2) Time=58.23326 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -31.2) Time=58.32511 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -31.8) Time=58.39765 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -32.6) Time=58.47054 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -33.2) Time=58.53473 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -34.0) Time=58.60449 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -34.8) Time=58.68659 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -35.4) Time=58.74654
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -35.4) Time=58.74654 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.0) Time=58.81023 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=58.89582 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=58.95407 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.02103 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.08761 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.14769 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.2086 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.27573 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.3485 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.40908 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.48048 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.53773 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.59396 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.64859 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.70908 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.77551
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.77551 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.84444 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.91784 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=59.98397 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=60.04695 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=60.10584 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=60.16686 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -36.8) Time=60.80801
+HR=0 GSR=0 (X,Y,Z)=(-9.9, 1.1, -26.0) Time=61.90636
+HR=0 GSR=0 (X,Y,Z)=(-9.7, 1.1, -15.8) Time=62.92373
+HR=0 GSR=0 (X,Y,Z)=(-9.5, 1.1, -6.9) Time=64.0006
+HR=0 GSR=0 (X,Y,Z)=(-9.5, 1.1, -6.9) Time=65.03069
+HR=0 GSR=0 (X,Y,Z)=(-9.5, 1.1, -6.9) Time=66.07882
+HR=0 GSR=0 (X,Y,Z)=(-9.5, 1.1, -6.9) Time=67.09319
+HR=0 GSR=0 (X,Y,Z)=(-9.5, 1.1, -6.9) Time=68.14
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.3, 21.2) Time=0.02
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=1.072643
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.6) Time=2.13214
+HR=0 GSR=0 (X,Y,Z)=(-17.5, 1.1, 21.6) Time=3.203851
+HR=0 GSR=0 (X,Y,Z)=(-6.9, 1.1, 21.2) Time=4.276155
+HR=0 GSR=0 (X,Y,Z)=(-3.3, 1.1, 20.1) Time=4.685466 PoundEvent
+HR=0 GSR=0 (X,Y,Z)=(-0.6, 1.1, 19.5) Time=5.310958
+HR=0 GSR=0 (X,Y,Z)=(8.1, 1.1, 21.6) Time=6.329495
+HR=0 GSR=0 (X,Y,Z)=(13.2, 1.1, 21.4) Time=7.340932
+HR=0 GSR=0 (X,Y,Z)=(13.2, 1.1, 20.2) Time=8.36343
+HR=0 GSR=0 (X,Y,Z)=(12.0, 1.1, 10.6) Time=9.369924
+HR=0 GSR=0 (X,Y,Z)=(13.8, 1.1, 4.7) Time=10.42526
+HR=0 GSR=0 (X,Y,Z)=(13.8, 1.1, 4.7) Time=11.50992
+HR=0 GSR=0 (X,Y,Z)=(13.8, 1.1, 4.7) Time=12.52289
+HR=0 GSR=0 (X,Y,Z)=(13.8, 1.1, 4.7) Time=13.54034
+HR=0 GSR=0 (X,Y,Z)=(13.8, 1.1, 4.7) Time=14.58894
+HR=0 GSR=0 (X,Y,Z)=(5.2, 1.1, 2.5) Time=15.60367
+HR=0 GSR=0 (X,Y,Z)=(-4.3, 1.1, 3.1) Time=16.61909
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, 7.4) Time=17.6832
+HR=0 GSR=0 (X,Y,Z)=(-13.7, 1.1, 14.1) Time=18.51341 SlamEvent
+HR=0 GSR=0 (X,Y,Z)=(-15.4, 1.1, 14.7) Time=18.68585
+HR=0 GSR=0 (X,Y,Z)=(-11.7, 1.1, 14.0) Time=19.75987
+HR=0 GSR=0 (X,Y,Z)=(-9.3, 1.1, 7.0) Time=20.83704
+HR=0 GSR=0 (X,Y,Z)=(-9.7, 1.1, 2.3) Time=21.91382
+HR=0 GSR=0 (X,Y,Z)=(-10.1, 1.1, -2.4) Time=22.93073
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -12.5) Time=23.94026
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -22.5) Time=25.01722
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -22.5) Time=25.01722 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=25.08399 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=25.14257 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=25.20199 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -23.2) Time=25.25764 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -23.2) Time=25.32201 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -23.2) Time=25.38246 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -23.2) Time=25.44258 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -23.2) Time=25.50107 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=25.57405 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=25.64576 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=25.73033 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=25.80774 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=25.87082 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=25.94172 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.00963 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.06448
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.06448 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.12202 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.18148 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.24137 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.29724 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.36372 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.42127 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.54212 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.59741 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.65491 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.71314 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.76797 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.82552 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.89258 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=26.99403 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.05856 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.12973
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.12973 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.19536 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.25557 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.31454 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.3768 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.45918 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.51531 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.57763 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.64268 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.69734 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.75505 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.81174 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.87762 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.93379 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.99199 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.0652 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.13535
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.13535 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.20152 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.277 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.33822 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.39678 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.45572 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.5121 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.57453 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.62768 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.68557 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.74244 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.80461 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.86515 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.92343 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=28.98328 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=29.04875 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=29.12188 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=29.1945
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=29.1945 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=29.25727 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.31069 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.36651 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.44448 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.5216 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.59315 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -22.6) Time=29.65494 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -22.0) Time=29.71705 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -21.4) Time=29.77161 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -20.8) Time=29.83097 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -20.2) Time=29.89768 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -19.6) Time=29.95967 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -19.0) Time=30.01282 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -18.2) Time=30.08035 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -17.6) Time=30.15215 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -16.8) Time=30.22857
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -16.8) Time=30.22857 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -16.0) Time=30.30144 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -15.4) Time=30.37826 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -14.6) Time=30.44922 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -14.0) Time=30.50955 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -13.9) Time=30.57236 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -13.9) Time=30.63899 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -13.9) Time=30.73476 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -13.9) Time=30.8214 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -13.8) Time=30.90587 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -13.8) Time=30.97901 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -13.8) Time=31.04458 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -13.8) Time=31.11035 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -13.8) Time=31.1853 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -13.8) Time=31.25078
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -13.8) Time=31.25078 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -13.8) Time=31.31485 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -13.8) Time=31.39594 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -13.8) Time=31.46256 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.1, 1.1, -13.8) Time=31.53024 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.1, 1.1, -13.8) Time=31.60263 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.1, 1.1, -13.8) Time=31.67915 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.1, 1.1, -14.6) Time=31.74219 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -15.2) Time=31.80895 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -15.8) Time=31.86877 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -16.4) Time=31.93046 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -17.0) Time=31.99397 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -17.8) Time=32.0704 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -18.6) Time=32.15368 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -19.4) Time=32.22162 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -20.0) Time=32.29216
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -20.0) Time=32.29216 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -20.8) Time=32.36194 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -21.4) Time=32.42734 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -22.2) Time=32.50067 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -22.8) Time=32.56451 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -23.4) Time=32.6281 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -24.2) Time=32.70782 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -24.8) Time=32.77111 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -25.4) Time=32.83872 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -26.2) Time=32.90685 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -26.8) Time=32.97763 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -27.6) Time=33.04438 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -28.2) Time=33.11828 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -29.0) Time=33.18881 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -29.8) Time=33.27052 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -30.8) Time=33.37412
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -30.8) Time=33.37412 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -31.6) Time=33.44639 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -32.4) Time=33.52493 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -33.0) Time=33.59301 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -33.8) Time=33.6694 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -34.4) Time=33.7365 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=33.805 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.8) Time=33.86644 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.8) Time=33.9352 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=33.99414 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.05811 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.11822 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.17422 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.2367 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.30638 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.37151 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.433
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.433 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.51412 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.59056 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.6816 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.75772 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.82607 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.89778 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=34.95616 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=35.01831 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=35.09491 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=35.15645 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=35.21416 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -35.2) Time=35.4555
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.3, 21.2) Time=0.02
+HR=0 GSR=0 (X,Y,Z)=(-27.8, 1.1, 23.0) Time=1.084295
+HR=0 GSR=0 (X,Y,Z)=(-24.9, 1.1, 22.3) Time=2.114345
+HR=0 GSR=0 (X,Y,Z)=(-14.4, 1.1, 20.4) Time=3.198931
+HR=0 GSR=0 (X,Y,Z)=(-5.4, 1.1, 20.5) Time=4.237195
+HR=0 GSR=0 (X,Y,Z)=(-2.7, 1.1, 20.2) Time=4.59143 PoundEvent
+HR=0 GSR=0 (X,Y,Z)=(1.2, 1.1, 21.3) Time=5.245051
+HR=0 GSR=0 (X,Y,Z)=(10.8, 1.1, 20.9) Time=6.28388
+HR=0 GSR=0 (X,Y,Z)=(12.0, 1.1, 20.6) Time=7.309609
+HR=0 GSR=0 (X,Y,Z)=(12.7, 1.1, 19.0) Time=8.369211
+HR=0 GSR=0 (X,Y,Z)=(12.1, 1.1, 9.4) Time=9.443041
+HR=0 GSR=0 (X,Y,Z)=(13.8, 1.1, 1.9) Time=10.48727
+HR=0 GSR=0 (X,Y,Z)=(13.8, 1.1, 1.9) Time=11.54699
+HR=0 GSR=0 (X,Y,Z)=(9.5, 1.1, 1.6) Time=12.58429
+HR=0 GSR=0 (X,Y,Z)=(-0.7, 1.1, 2.5) Time=13.67191
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, 5.2) Time=14.72805
+HR=0 GSR=0 (X,Y,Z)=(-11.8, 1.1, 15.1) Time=15.78952
+HR=0 GSR=0 (X,Y,Z)=(-13.4, 1.1, 15.1) Time=15.97598 SlamEvent
+HR=0 GSR=0 (X,Y,Z)=(-12.2, 1.1, 14.1) Time=16.85621
+HR=0 GSR=0 (X,Y,Z)=(-9.1, 1.1, 7.3) Time=17.88591
+HR=0 GSR=0 (X,Y,Z)=(-9.2, 1.1, 6.9) Time=18.95824
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, 0.0) Time=19.974
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -0.2) Time=21.01058
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -5.1) Time=22.0299
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -15.5) Time=23.13473
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -22.1) Time=23.79185 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -22.7) Time=23.85491 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=23.92064 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -23.2) Time=23.99891 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -23.2) Time=24.08418 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -23.2) Time=24.15106
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -23.2) Time=24.15106 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=24.22022 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=24.28328 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=24.35721 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=24.4338 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=24.51229 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=24.57519 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=24.63666 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=24.70186 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=24.75499 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=24.81417 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=24.88358 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=24.94074 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.00032 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.06365 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.13558 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.19255
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.19255 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.25417 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.3085 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.36666 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.42734 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.48148 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.54108 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.61556 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.67515 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.75056 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.82628 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.88674 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.93894 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=25.99236 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.05707 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.12303 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.18397 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.23759
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.23759 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.29595 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.36223 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.42034 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.4891 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.55255 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.61166 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.67466 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.73774 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.80789 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.87064 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=26.9395 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.01816 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.08213 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.14754 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.20906 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.26883
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.26883 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.32813 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.38268 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.44539 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.50174 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.56301 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.62601 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.69115 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.75435 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.81028 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.87242 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.93848 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=27.99528 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.05297 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.10971 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.17839 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.25378 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.3145
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.3145 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.39317 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.45225 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.51423 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.57674 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.64181 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.69942 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.75694 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.82329 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.88279 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=28.94523 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.01179 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.07703 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.15029 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.21086 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.27565 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.34086
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=29.34086 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.8) Time=29.41966 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -24.8) Time=29.50738 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -25.4) Time=29.57659 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -26.4) Time=29.66086 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -27.0) Time=29.72064 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -27.6) Time=29.78635 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -28.4) Time=29.86189 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -29.2) Time=29.9404 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -29.8) Time=30.01664 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -30.6) Time=30.08813 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -31.2) Time=30.15404 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -31.8) Time=30.21997 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -32.6) Time=30.29712 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -33.4) Time=30.36444
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -33.4) Time=30.36444 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.2, 1.1, -34.0) Time=30.43337 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.2, 1.1, -34.8) Time=30.5113 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.2, 1.1, -34.8) Time=30.57686 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.2, 1.1, -34.2) Time=30.63405 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.2, 1.1, -33.6) Time=30.69994 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -32.6) Time=30.7868 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -32.0) Time=30.8527 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -31.4) Time=30.91802 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -30.8) Time=30.97567 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -30.2) Time=31.03167 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -29.6) Time=31.0986 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -28.8) Time=31.17637 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.0, 1.1, -28.0) Time=31.25147 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -27.4) Time=31.31249 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -26.8) Time=31.37175
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -26.8) Time=31.37175 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -26.2) Time=31.42783 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -25.6) Time=31.48679 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.9, 1.1, -25.0) Time=31.54776 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -24.4) Time=31.60841 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.8) Time=31.66672 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.2) Time=31.72584 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -22.6) Time=31.78825 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -22.0) Time=31.85254 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -21.8) Time=31.91318 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -21.6) Time=31.9906 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -21.6) Time=32.41889
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -21.6) Time=33.46231
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -21.6) Time=34.5331
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -21.6) Time=35.55943
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.3, 21.2) Time=0.02
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=1.069788
+HR=0 GSR=0 (X,Y,Z)=(-25.2, 1.1, 21.4) Time=2.118756
+HR=0 GSR=0 (X,Y,Z)=(-17.3, 1.1, 21.5) Time=3.134397
+HR=0 GSR=0 (X,Y,Z)=(-7.5, 1.1, 20.5) Time=4.194246
+HR=0 GSR=0 (X,Y,Z)=(-3.2, 1.1, 20.0) Time=4.751465 PoundEvent
+HR=0 GSR=0 (X,Y,Z)=(-0.6, 1.1, 19.6) Time=5.206547
+HR=0 GSR=0 (X,Y,Z)=(8.3, 1.1, 20.8) Time=6.281844
+HR=0 GSR=0 (X,Y,Z)=(14.4, 1.1, 21.2) Time=7.286417
+HR=0 GSR=0 (X,Y,Z)=(14.4, 1.1, 21.2) Time=8.354836
+HR=0 GSR=0 (X,Y,Z)=(12.8, 1.1, 12.5) Time=9.407299
+HR=0 GSR=0 (X,Y,Z)=(13.5, 1.1, 4.9) Time=10.43612
+HR=0 GSR=0 (X,Y,Z)=(13.1, 1.1, 2.3) Time=11.4401
+HR=0 GSR=0 (X,Y,Z)=(13.1, 1.1, 2.3) Time=12.47812
+HR=0 GSR=0 (X,Y,Z)=(3.6, 1.1, 1.4) Time=13.57151
+HR=0 GSR=0 (X,Y,Z)=(-5.7, 1.1, 3.0) Time=14.57826
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, 10.4) Time=15.64282
+HR=0 GSR=0 (X,Y,Z)=(-14.1, 1.1, 14.2) Time=16.30949 SlamEvent
+HR=0 GSR=0 (X,Y,Z)=(-14.7, 1.1, 14.2) Time=16.6798
+HR=0 GSR=0 (X,Y,Z)=(-9.8, 1.1, 14.5) Time=17.74487
+HR=0 GSR=0 (X,Y,Z)=(-9.8, 1.1, 13.5) Time=18.83509
+HR=0 GSR=0 (X,Y,Z)=(-9.9, 1.1, 3.6) Time=19.83517
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -0.3) Time=20.84708
+HR=0 GSR=0 (X,Y,Z)=(-10.0, 1.1, -10.8) Time=21.92132
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -15.7) Time=22.98731
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -15.7) Time=24.03933
+HR=0 GSR=0 (X,Y,Z)=(-9.0, 1.1, -17.8) Time=25.1109
+HR=0 GSR=0 (X,Y,Z)=(-9.8, 1.1, -20.6) Time=26.12463
+HR=0 GSR=0 (X,Y,Z)=(-9.9, 1.1, -21.9) Time=26.5611 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.1, 1.1, -23.2) Time=27.16106
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -23.2) Time=28.20738
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -21.2) Time=29.22322
+HR=0 GSR=0 (X,Y,Z)=(-10.0, 1.1, -18.1) Time=30.2669
+HR=0 GSR=0 (X,Y,Z)=(-9.7, 1.1, -14.8) Time=31.27903
+HR=0 GSR=0 (X,Y,Z)=(-10.6, 1.1, -25.0) Time=32.28802
+HR=0 GSR=0 (X,Y,Z)=(-9.9, 1.1, -17.6) Time=33.35013
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -20.0) Time=34.37982
+HR=0 GSR=0 (X,Y,Z)=(-9.0, 1.1, -29.9) Time=35.41849
+HR=0 GSR=0 (X,Y,Z)=(-9.0, 1.1, -36.9) Time=36.46824
+HR=0 GSR=0 (X,Y,Z)=(-8.8, 1.1, -35.1) Time=37.51479
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.3, 21.2) Time=0.02
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=1.07716
+HR=0 GSR=0 (X,Y,Z)=(-21.8, 1.1, 21.5) Time=2.136076
+HR=0 GSR=0 (X,Y,Z)=(-12.0, 1.1, 21.9) Time=3.211748
+HR=0 GSR=0 (X,Y,Z)=(-9.0, 1.1, 21.6) Time=4.249622
+HR=0 GSR=0 (X,Y,Z)=(-3.2, 1.1, 20.3) Time=4.851469 PoundEvent
+HR=0 GSR=0 (X,Y,Z)=(-0.7, 1.1, 18.6) Time=5.316939
+HR=0 GSR=0 (X,Y,Z)=(4.4, 1.1, 21.6) Time=6.339635
+HR=0 GSR=0 (X,Y,Z)=(12.8, 1.1, 20.3) Time=7.355059
+HR=0 GSR=0 (X,Y,Z)=(13.1, 1.1, 20.3) Time=8.4304
+HR=0 GSR=0 (X,Y,Z)=(11.8, 1.1, 10.3) Time=9.494664
+HR=0 GSR=0 (X,Y,Z)=(14.0, 1.1, 2.4) Time=10.51666
+HR=0 GSR=0 (X,Y,Z)=(13.3, 1.1, 1.1) Time=11.58576
+HR=0 GSR=0 (X,Y,Z)=(8.4, 1.1, 1.7) Time=12.68688
+HR=0 GSR=0 (X,Y,Z)=(-2.4, 1.1, 1.8) Time=13.77249
+HR=0 GSR=0 (X,Y,Z)=(-8.8, 1.1, 6.8) Time=14.79657
+HR=0 GSR=0 (X,Y,Z)=(-13.0, 1.1, 15.1) Time=15.86744
+HR=0 GSR=0 (X,Y,Z)=(-13.8, 1.1, 15.1) Time=15.95159 SlamEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.9, 1.1, 14.4) Time=16.89396
+HR=0 GSR=0 (X,Y,Z)=(-8.7, 1.1, 7.2) Time=17.91611
+HR=0 GSR=0 (X,Y,Z)=(-8.7, 1.1, 6.2) Time=18.92569
+HR=0 GSR=0 (X,Y,Z)=(-9.9, 1.1, 1.6) Time=20.0278
+HR=0 GSR=0 (X,Y,Z)=(-10.3, 1.1, -3.5) Time=21.05844
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -14.4) Time=22.15126
+HR=0 GSR=0 (X,Y,Z)=(-10.1, 1.1, -22.7) Time=22.98253 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -23.2) Time=23.19822
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=24.02768 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=24.21346
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=25.07907 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=25.25925
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=26.10632 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=26.2803
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=27.12532 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=27.29689
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=28.1605 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.5, 1.1, -23.2) Time=28.3206
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -26.4) Time=29.20519 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -27.6) Time=29.33025
+HR=0 GSR=0 (X,Y,Z)=(-11.3, 1.1, -36.8) Time=30.25581 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.3, 1.1, -38.0) Time=30.37045
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -30.0) Time=31.27814 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -29.6) Time=31.40777
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -29.2) Time=32.43799
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -29.2) Time=33.46645
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -29.2) Time=34.50589
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.3, 21.2) Time=0.02
+HR=0 GSR=0 (X,Y,Z)=(-28.0, 1.1, 21.2) Time=1.094301
+HR=0 GSR=0 (X,Y,Z)=(-24.5, 1.1, 21.8) Time=2.13311
+HR=0 GSR=0 (X,Y,Z)=(-14.6, 1.1, 20.4) Time=3.160876
+HR=0 GSR=0 (X,Y,Z)=(-4.5, 1.1, 20.4) Time=4.215622
+HR=0 GSR=0 (X,Y,Z)=(-3.3, 1.1, 20.1) Time=4.372165 PoundEvent
+HR=0 GSR=0 (X,Y,Z)=(0.9, 1.1, 21.5) Time=5.23858
+HR=0 GSR=0 (X,Y,Z)=(10.9, 1.1, 20.4) Time=6.315754
+HR=0 GSR=0 (X,Y,Z)=(13.1, 1.1, 20.4) Time=7.321593
+HR=0 GSR=0 (X,Y,Z)=(13.3, 1.1, 19.4) Time=8.412107
+HR=0 GSR=0 (X,Y,Z)=(12.3, 1.1, 9.7) Time=9.481867
+HR=0 GSR=0 (X,Y,Z)=(12.6, 1.1, 2.6) Time=10.49942
+HR=0 GSR=0 (X,Y,Z)=(12.6, 1.1, 2.6) Time=11.50741
+HR=0 GSR=0 (X,Y,Z)=(4.8, 1.1, 2.6) Time=12.61408
+HR=0 GSR=0 (X,Y,Z)=(-5.6, 1.1, 1.8) Time=13.68011
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, 9.8) Time=14.70833
+HR=0 GSR=0 (X,Y,Z)=(-13.7, 1.1, 14.4) Time=15.31235 SlamEvent
+HR=0 GSR=0 (X,Y,Z)=(-17.3, 1.1, 13.6) Time=15.75264
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, 10.6) Time=16.76184
+HR=0 GSR=0 (X,Y,Z)=(-8.6, 1.1, 7.6) Time=17.80467
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, 2.2) Time=18.81567
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, 0.4) Time=19.86055
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, 0.4) Time=20.91133
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -2.0) Time=21.94203
+HR=0 GSR=0 (X,Y,Z)=(-10.2, 1.1, -11.7) Time=22.96896
+HR=0 GSR=0 (X,Y,Z)=(-9.8, 1.1, -17.9) Time=24.01601
+HR=0 GSR=0 (X,Y,Z)=(-9.8, 1.1, -17.9) Time=25.04866
+HR=0 GSR=0 (X,Y,Z)=(-9.8, 1.1, -17.9) Time=26.12148
+HR=0 GSR=0 (X,Y,Z)=(-10.1, 1.1, -22.4) Time=26.78664 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.7, 1.1, -23.2) Time=27.15104
+HR=0 GSR=0 (X,Y,Z)=(-8.7, 1.1, -23.2) Time=27.81946 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.5, 1.1, -23.2) Time=28.22195
+HR=0 GSR=0 (X,Y,Z)=(-8.7, 1.1, -23.2) Time=28.86396 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-8.7, 1.1, -23.2) Time=29.25229
+HR=0 GSR=0 (X,Y,Z)=(-9.0, 1.1, -23.2) Time=29.91429 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.0, 1.1, -23.2) Time=30.2714
+HR=0 GSR=0 (X,Y,Z)=(-9.8, 1.1, -23.2) Time=30.95125 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-10.8, 1.1, -23.3) Time=31.2813
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -23.3) Time=32.00153 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-11.1, 1.1, -23.3) Time=32.30894
+HR=0 GSR=0 (X,Y,Z)=(-9.7, 1.1, -27.9) Time=33.02849 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -30.8) Time=33.33155
+HR=0 GSR=0 (X,Y,Z)=(-10.0, 1.1, -33.6) Time=34.04098 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.6, 1.1, -30.8) Time=34.33429
+HR=0 GSR=0 (X,Y,Z)=(-9.2, 1.1, -27.7) Time=35.08317 LadyEvent
+HR=0 GSR=0 (X,Y,Z)=(-9.2, 1.1, -27.7) Time=35.37847
+HR=0 GSR=0 (X,Y,Z)=(-9.2, 1.1, -27.7) Time=36.39061
+HR=0 GSR=0 (X,Y,Z)=(-9.3, 1.1, -25.5) Time=37.42139
+HR=0 GSR=0 (X,Y,Z)=(-9.7, 1.1, -15.2) Time=38.46463
+HR=0 GSR=0 (X,Y,Z)=(-10.4, 1.1, -5.8) Time=39.48392
+HR=0 GSR=0 (X,Y,Z)=(-10.1, 1.1, -9.8) Time=40.4952
+HR=0 GSR=0 (X,Y,Z)=(-12.7, 1.1, -10.2) Time=41.54873
+HR=0 GSR=0 (X,Y,Z)=(-21.3, 1.1, -9.7) Time=42.60387
+HR=0 GSR=0 (X,Y,Z)=(-21.3, 1.1, -9.7) Time=42.60387 VaseEvent
+HR=0 GSR=0 (X,Y,Z)=(-30.2, 1.1, -10.5) Time=43.61512
+HR=0 GSR=0 (X,Y,Z)=(-40.5, 1.1, -11.3) Time=44.66908
+HR=0 GSR=0 (X,Y,Z)=(-50.1, 1.1, -9.3) Time=45.69551
+HR=0 GSR=0 (X,Y,Z)=(-57.8, 1.1, -10.2) Time=46.71328
+HR=0 GSR=0 (X,Y,Z)=(-59.7, 1.1, -10.0) Time=47.76154
