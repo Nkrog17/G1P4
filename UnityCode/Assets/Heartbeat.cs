@@ -22,10 +22,15 @@ public class Heartbeat : MonoBehaviour
     bool stopPound;
     bool stopSlam;
     bool stopVase;
+    bool stopLady;
+    bool ladyEvent;
+    bool enterStopEvent;
 
     float counter;
     float counter2;
     float counter3;
+    float counter4;
+    float stopEvent;
 
 
 
@@ -91,8 +96,14 @@ public class Heartbeat : MonoBehaviour
         if (!stopVase) {
             vaseevent = VaseSoundTrigger.vaseEventBool;
         }
+        if (!stopLady)
+        {
+            ladyEvent = HallWayGirl.ladyEventStart;
+        }
 
-        if (coldoorpound == true || doorslam == true || vaseevent == true)
+
+
+        if (coldoorpound == true || doorslam == true || vaseevent == true || ladyEvent == true)
         {
             if (coldoorpound == true)
             {
@@ -148,6 +159,37 @@ public class Heartbeat : MonoBehaviour
                     stopVase = true;
                 }
             }
+            if(ladyEvent == true)
+            {
+                counter4 += Time.deltaTime;
+
+                if(counter4 >= 3 && counter4 >= playTimer)
+                {
+                    heartBeat.Play();
+                    playTimer = counter4 + 60 / 120f;
+                    if(GoneGirl.ladyEventEnd == true)
+                    {
+                        if(!enterStopEvent)
+                        {
+                            stopEvent = counter4 + 5;
+                            enterStopEvent = true;
+                        }
+                        
+                       
+                        if (counter4 >= stopEvent)
+                        {
+                        
+                            heartBeat.Stop();
+                            ladyEvent = false;
+                            stopLady = true;
+                        }
+
+                    }
+                }
+            }
+
+
+
         }
     }
 }
