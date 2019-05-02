@@ -11414,7 +11414,7 @@ TextMesh:
   m_FontSize: 0
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: 87c316b602156405d92e616621658222, type: 3}
+  m_Font: {fileID: 12800000, guid: eb7b04c1fb2e7b043a8ca571f55c56a9, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278716654
@@ -11435,7 +11435,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 87c316b602156405d92e616621658222, type: 3}
+  - {fileID: 2100000, guid: eb7b04c1fb2e7b043a8ca571f55c56a9, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15867,11 +15867,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 679135477}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &679135479 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 679135477}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &688359167
 GameObject:
   m_ObjectHideFlags: 0
@@ -19862,11 +19857,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4553149489814590, guid: 21d20ff3fec644b41a3607192cab75a5,
     type: 3}
-  m_PrefabInstance: {fileID: 881312986}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &881312988 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 881312986}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &882335301
@@ -29328,11 +29318,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1397438211}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1397438213 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1397438211}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1397889207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35355,6 +35340,7 @@ MonoBehaviour:
   vaseBroken: {fileID: 1411393878}
   cameraShake: {fileID: 1747398967}
   vase: {fileID: 0}
+  slam: {fileID: 0}
   Lamp1: {fileID: 1353913225}
   Lamp2: {fileID: 1906419873}
   Lamp3: {fileID: 694048888}
@@ -43275,12 +43261,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 314523567}
-  - {fileID: 679135479}
-  - {fileID: 1397438213}
-  - {fileID: 1992880883}
+  - {fileID: 679135478}
+  - {fileID: 1397438212}
+  - {fileID: 1992880882}
   - {fileID: 1734734028}
   - {fileID: 1825049308}
-  - {fileID: 881312988}
+  - {fileID: 881312987}
   - {fileID: 1054689541}
   - {fileID: 222707489}
   - {fileID: 1399416381}
@@ -43879,11 +43865,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4553149489814590, guid: 21d20ff3fec644b41a3607192cab75a5,
     type: 3}
-  m_PrefabInstance: {fileID: 1992880881}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1992880883 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 1992880881}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1995716182
