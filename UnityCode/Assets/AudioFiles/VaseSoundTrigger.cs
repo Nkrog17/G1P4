@@ -10,6 +10,7 @@ public class VaseSoundTrigger : MonoBehaviour
     public CameraShake cameraShake;
 
     public AudioSource vase;
+    public AudioSource slam;
     bool havePlayed = false;
 
     public GameObject Lamp1;
@@ -59,7 +60,9 @@ public class VaseSoundTrigger : MonoBehaviour
         yield return new WaitForSeconds(1);
         horrorScream.GetComponent<AudioSource>().Play();
         StartCoroutine(cameraShake.Shake(6f, .1f));
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(2);
+        slam.GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(3);
         Lamp1.GetComponent<AudioSource>().Play();
         Lamp1.GetComponent<LightController>().lightSwitch();
         yield return new WaitForSeconds(1);
@@ -81,6 +84,7 @@ public class VaseSoundTrigger : MonoBehaviour
         yield return new WaitForSeconds(1);
         Lamp7.GetComponent<AudioSource>().Play();
         Lamp7.GetComponent<LightController>().lightSwitch();
+        
 
     }
 
