@@ -56,10 +56,10 @@ public class VaseSoundTrigger : MonoBehaviour
 
     IEnumerator waiter()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         horrorScream.GetComponent<AudioSource>().Play();
         StartCoroutine(cameraShake.Shake(6f, .1f));
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
         Lamp1.GetComponent<AudioSource>().Play();
         Lamp1.GetComponent<LightController>().lightSwitch();
         yield return new WaitForSeconds(1);

@@ -8,6 +8,8 @@ public class HallWayGirl : MonoBehaviour
 
     public AudioSource light;
     bool havePlayed = false;
+    public AudioSource girlNoises;
+    public GameObject girlNoiseObject;
 
     public GameObject Lamp1;
     public GameObject Lamp2;
@@ -51,10 +53,13 @@ public class HallWayGirl : MonoBehaviour
         void Start()
     {
         Bitch.SetActive(false);
+        girlNoises = girlNoises.GetComponent<AudioSource>();
     }
 
     IEnumerator waiter()
     {
+        yield return new WaitForSeconds(1);
+        girlNoises.Play();
         yield return new WaitForSeconds(2);
         Bitch.SetActive(true);
         yield return new WaitForSeconds(3);
