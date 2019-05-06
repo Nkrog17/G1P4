@@ -21,10 +21,10 @@ public class doorStartOpen : MonoBehaviour
     {
         if (SerialPortScript.baseLine == false)
         {
-            anim.SetTrigger("doorStartOpen");
+           
             if (!knirkxd)
             {
-                
+                anim.SetTrigger("doorStartOpen");
                 knirk.PlayDelayed(0.4f);
                 knirkxd = true;
             }

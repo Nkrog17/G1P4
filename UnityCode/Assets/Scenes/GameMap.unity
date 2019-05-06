@@ -3068,7 +3068,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 17630961}
-  anim: {fileID: 0}
   close: {fileID: 17630962}
 --- !u!65 &85956631
 BoxCollider:
@@ -6922,7 +6921,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1217025148}
-  anim: {fileID: 1217025150}
   close: {fileID: 1217025149}
 --- !u!65 &270268118
 BoxCollider:
@@ -16046,11 +16044,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4978884639899076, guid: f075c55e4910938439916c08a66fdfa5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4978884639899076, guid: f075c55e4910938439916c08a66fdfa5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7088185
+      value: 0.9848078
       objectReference: {fileID: 0}
     - target: {fileID: 4978884639899076, guid: f075c55e4910938439916c08a66fdfa5, type: 3}
       propertyPath: m_LocalRotation.z
@@ -16058,7 +16056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4978884639899076, guid: f075c55e4910938439916c08a66fdfa5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7053909
+      value: -0.17364809
       objectReference: {fileID: 0}
     - target: {fileID: 4978884639899076, guid: f075c55e4910938439916c08a66fdfa5, type: 3}
       propertyPath: m_RootOrder
@@ -16070,7 +16068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4978884639899076, guid: f075c55e4910938439916c08a66fdfa5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90.27801
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4978884639899076, guid: f075c55e4910938439916c08a66fdfa5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -25547,12 +25545,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!95 &1217025150 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 72002785, guid: f075c55e4910938439916c08a66fdfa5,
-    type: 3}
-  m_PrefabInstance: {fileID: 692571583}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1220461541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39676,7 +39668,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1801889550
 Light:
   m_ObjectHideFlags: 0
@@ -41513,7 +41505,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1421099409}
-  anim: {fileID: 0}
   close: {fileID: 1421099410}
 --- !u!65 &1872890713
 BoxCollider:
@@ -45124,7 +45115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2037975299
 Transform:
   m_ObjectHideFlags: 0

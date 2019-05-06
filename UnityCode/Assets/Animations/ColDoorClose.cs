@@ -5,7 +5,7 @@ using UnityEngine;
 public class ColDoorClose : MonoBehaviour
 {
     public GameObject door;
-    public Animator anim;
+    Animator anim;
     public AudioSource close;
     bool knirkHavePlayed = false;
 
