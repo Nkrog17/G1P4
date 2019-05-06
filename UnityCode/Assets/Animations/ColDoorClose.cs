@@ -5,7 +5,7 @@ using UnityEngine;
 public class ColDoorClose : MonoBehaviour
 {
     public GameObject door;
-    Animator anim;
+    public Animator anim;
     public AudioSource close;
     bool knirkHavePlayed = false;
 
@@ -15,11 +15,11 @@ public class ColDoorClose : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        anim.SetTrigger("doorClose");
-
-
+      
         if (!knirkHavePlayed)
         {
+            anim.SetTrigger("doorClose");
+
             close.PlayDelayed(0.5f);
             knirkHavePlayed = true;
         }

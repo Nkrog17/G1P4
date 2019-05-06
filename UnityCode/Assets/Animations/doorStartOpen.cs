@@ -5,26 +5,28 @@ using UnityEngine;
 
 public class doorStartOpen : MonoBehaviour
 {
-    public GameObject door;
+    public GameObject doorSound;
+    public GameObject dooranim;
     Animator anim;
     public AudioSource knirk;
-    bool knirkHavePlayed = false;
+    bool knirkxd = false;
 
     void Start()
     {
-        knirk = door.GetComponent<AudioSource>();
-        anim = door.GetComponent<Animator>();
+        knirk = doorSound.GetComponent<AudioSource>();
+        anim = dooranim.GetComponent<Animator>();
     }
 
     void Update()
     {
         if (SerialPortScript.baseLine == false)
         {
-            if (!knirkHavePlayed)
+            anim.SetTrigger("doorStartOpen");
+            if (!knirkxd)
             {
-                anim.SetTrigger("doorStartOpen");
+                
                 knirk.PlayDelayed(0.4f);
-                knirkHavePlayed = true;
+                knirkxd = true;
             }
         }
 
