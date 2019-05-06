@@ -45,21 +45,24 @@ public class Logfile : MonoBehaviour
         {
             SPSHR = serialport.GetComponent<SerialPortScript>().latestHRLog;
             SPSGSR = serialport.GetComponent<SerialPortScript>().latestGSRLog;
-            WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
-
+            if (SpikeGSR || SpikeHR)
+            {
+                if (SpikeHR)
+                {
+                    WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer + " spikeHR");
+                }
+                if (SpikeGSR)
+                {
+                    WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer + " spikeGSR");
+                }
+            }
+            else
+            {
+                WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer);
+            }
             newTimer = timer + 1;
         }
-        if (SpikeGSR || SpikeHR)
-        {
-            if (SpikeHR)
-            {
-                WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer + "spikeHR");
-            }
-            if (SpikeGSR)
-            {
-                WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer + "spikeGSR");
-            }
-        }
+
 
         if (!stopPound)
         {
@@ -112,7 +115,8 @@ public class Logfile : MonoBehaviour
         if (ladyEvent)
         {
             ladyTimer += Time.deltaTime;
-            if (ladyTimer >= newLadyTimer) {
+            if (ladyTimer >= newLadyTimer)
+            {
                 WriteToFile("HR=" + SPSHR + " GSR=" + SPSGSR + " (X,Y,Z)=" + GameObject.Find("FPSController").transform.position + " Time=" + timer + " LadyEvent");
                 newLadyTimer = ladyTimer + 1;
             }
@@ -120,13 +124,13 @@ public class Logfile : MonoBehaviour
             {
                 ladyEvent = false;
                 stopLady = true;
-                
+
             }
         }
     }
     public void WriteToFile(string message)
     {
-        using (System.IO.StreamWriter logFile = new System.IO.StreamWriter(@"Assets/Logging/LogFile.txt", true))
+        using (System.IO.StreamWriter logFile = new System.IO.StreamWriter(@"abekatmed.txt", true))
         {
             logFile.WriteLine(message);
         }

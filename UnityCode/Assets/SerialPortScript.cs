@@ -7,7 +7,7 @@ using System.Threading;
 public class SerialPortScript : MonoBehaviour
 {
     Thread myThread; 
-    SerialPort stream = new SerialPort("COM5", 9600);
+    SerialPort stream = new SerialPort("COM4", 9600);
     List<int> allHR = new List<int>();
     List<int> allGSR = new List<int>();
     List<int> HRtime = new List<int>();
@@ -23,7 +23,7 @@ public class SerialPortScript : MonoBehaviour
     int nonsenseGSR = 5;
     int nonsenseHR = 5;
     public static bool baseLine = true;
-    public static bool biofeedback = false;
+    public static bool biofeedback = true;
 
     bool stopAvgGSR;
     public int latestHR;

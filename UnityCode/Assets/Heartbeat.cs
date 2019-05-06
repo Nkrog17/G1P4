@@ -52,13 +52,13 @@ public class Heartbeat : MonoBehaviour
         else
         {
             HRnobiofeedback();
-            
+
         }
-        
 
 
 
-        
+
+
 
 
     }
@@ -70,19 +70,34 @@ public class Heartbeat : MonoBehaviour
 
         timer += Time.deltaTime;
         eventTimer += Time.deltaTime;
-        
 
 
-        if (hr != 0 && hr < 180 && hrSpike == true || gsrSpike == true)
+
+        if (hr != 0 && hr < 180 && hrSpike == true /*||  gsrSpike == true*/ && SerialPortScript.baseLine == false)
         {
             if (timer >= playTimer)
             {
+
                 heartBeat.Play();
                 playTimer = timer + 60 / hr;
+                if (hrSpike == false)
+                {
+                    HRfix();
+                    playTimer = 0;
+                }
             }
         }
     }
+    void HRfix()
+    {
+        float ntimer = 0f;
+        if (ntimer >= playTimer && ntimer < 3)
+        {
 
+            heartBeat.Play();
+            playTimer = timer + 60 / hr;
+        }
+    }
     void HRnobiofeedback()
     {
         if (!stopPound)
@@ -93,7 +108,8 @@ public class Heartbeat : MonoBehaviour
         {
             doorslam = ColDoorSlam.doorslamEventBool;
         }
-        if (!stopVase) {
+        if (!stopVase)
+        {
             vaseevent = VaseSoundTrigger.vaseEventBool;
         }
         if (!stopLady)
@@ -114,7 +130,7 @@ public class Heartbeat : MonoBehaviour
                     heartBeat.Play();
                     playTimer = counter + 60 / 120f;
                 }
-                else if(counter >=8)
+                else if (counter >= 8)
                 {
                     playTimer = 0;
                     coldoorpound = false;
@@ -128,57 +144,58 @@ public class Heartbeat : MonoBehaviour
 
                 if (counter2 >= 1 && counter2 < 8 && counter2 >= playTimer)
                 {
-                   
-                    
+
+
                     heartBeat.Play();
                     playTimer = counter2 + 60 / 120f;
-                   
+
                 }
-                else if(counter2 >= 8)
+                else if (counter2 >= 8)
                 {
                     playTimer = 0;
                     doorslam = false;
                     stopSlam = true;
                 }
-                
+
             }
 
             if (vaseevent == true)
             {
                 counter3 += Time.deltaTime;
-             
+
                 if (counter3 >= 1 && counter3 < 8 && counter3 >= playTimer)
                 {
                     heartBeat.Play();
                     playTimer = counter3 + 60 / 120f;
-                  
+
                 }
-                else if(counter3 >= 8){
+                else if (counter3 >= 8)
+                {
                     playTimer = 0;
                     vaseevent = false;
                     stopVase = true;
                 }
             }
-            if(ladyEvent == true)
+            if (ladyEvent == true)
             {
                 counter4 += Time.deltaTime;
 
-                if(counter4 >= 3 && counter4 >= playTimer)
+                if (counter4 >= 3 && counter4 >= playTimer)
                 {
                     heartBeat.Play();
                     playTimer = counter4 + 60 / 120f;
-                    if(GoneGirl.ladyEventEnd == true)
+                    if (GoneGirl.ladyEventEnd == true)
                     {
-                        if(!enterStopEvent)
+                        if (!enterStopEvent)
                         {
                             stopEvent = counter4 + 5;
                             enterStopEvent = true;
                         }
-                        
-                       
+
+
                         if (counter4 >= stopEvent)
                         {
-                        
+
                             heartBeat.Stop();
                             ladyEvent = false;
                             stopLady = true;
