@@ -25,7 +25,7 @@ public class SerialPortScript : MonoBehaviour
     int nonsenseGSR = 5;
     int nonsenseHR = 5;
     public static bool baseLine = true;
-    public static bool biofeedback = true;
+    public static bool biofeedback = false;
 
     bool stopAvgGSR;
     public int latestHR;
