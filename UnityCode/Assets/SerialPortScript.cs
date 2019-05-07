@@ -7,7 +7,9 @@ using System.Threading;
 public class SerialPortScript : MonoBehaviour
 {
     Thread myThread; 
+
     SerialPort stream = new SerialPort("COM4", 9600);
+
     List<int> allHR = new List<int>();
     List<int> allGSR = new List<int>();
     List<int> HRtime = new List<int>();
@@ -72,7 +74,6 @@ public class SerialPortScript : MonoBehaviour
             	latestHR = int.Parse(splitStrings[1]);
             }
             latestHRLog = int.Parse(splitStrings[1]);
-            //Debug.Log("HR er " + splitStrings[1]);
         }
         else if (splitStrings[0].Equals("GSR"))
         {
@@ -97,9 +98,9 @@ public class SerialPortScript : MonoBehaviour
         }
         if(Time.time > 60 && baseLine){
             baseLine = false;
-            //Debug.Log("Baseline er done!");
-            //Debug.Log(nonsenseGSR);
-            //Debug.Log(nonsenseHR);
+            Debug.Log("Baseline er done!");
+            Debug.Log(nonsenseGSR);
+            Debug.Log(nonsenseHR);
         }
         if((allGSR.Count > GSRbackRead && allHR.Count > HRbackRead)){
         //if(allGSR.Count > GSRbackRead){
@@ -117,7 +118,7 @@ public class SerialPortScript : MonoBehaviour
     void RegisterSpike()
     {
         // Record spikes if base line is no longer being recorded.
-        if(allGSR[allGSR.Count - GSRbackRead] - allGSR[allGSR.Count - 1] > nonsenseGSR){
+        if(allGSR[(allGSR.Count - 1) - GSRbackRead] - allGSR[allGSR.Count - 1] > nonsenseGSR){
             if(!GSRspikeNow){
                 //Debug.Log("Spike GSR");
                 GSRspikeNow = true;
@@ -125,30 +126,23 @@ public class SerialPortScript : MonoBehaviour
                     GSRspikes ++;
                 } else{
                     nonsenseGSR = allGSR[allGSR.Count - GSRbackRead] - allGSR[allGSR.Count - 1];
-
-                    //find average GSR in baseline
-                    /*
-                    float sum = 0f;
-                    for(int i = 0; i < allGSR.Count; i++){
-                    	sum += allGSR[i];
-                    }
-                    avgGSRbaseLine = sum / allGSR.Count;
-                    Debug.Log("SPS avgGSR = " + avgGSRbaseLine);
-                    */
                 }
             }
         } else {
             GSRspikeNow = false;
         }
 
-        if(allHR[allHR.Count - 1] - allHR[allHR.Count - HRbackRead] > nonsenseHR){
+        if(latestHRLog - allHR[(allHR.Count - 1) - HRbackRead] > nonsenseHR){
             if(!HRspikeNow){
                 //Debug.Log("Spike HR");
                 HRspikeNow = true;
                 if(!baseLine){
                     HRspikes ++;
                     } else {
-                        nonsenseHR = allHR[allHR.Count - 1] - allHR[allHR.Count - HRbackRead];
+                        nonsenseHR = latestHRLog - allHR[(allHR.Count - 1) - HRbackRead];
+ //                       Debug.Log(latestHRLog);
+ //                       Debug.Log(allHR[(allHR.Count - 1) - HRbackRead]);
+ //                       Debug.Log(nonsenseHR);
                     }
                 
             }
