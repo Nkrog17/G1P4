@@ -1,6 +1,16 @@
 '''
 Output-formatet er følgende:
-HR  GSR  X  Y  Z  TIME  EVENT#
+HR  GSR  X  Y  Z  TIME  EVENT#  SPIKE#
+
+event 0 = none
+event 1 = pound door
+event 2 = slam event
+event 3 = lady event
+event 4 = vase event
+
+spike 0 = none
+spike 1 = spike HR
+spike 2 = spike GSR
 '''
 
 def open_file():
@@ -16,15 +26,23 @@ def save_file(text):
 
 def event_to_int(event):
     if event == 'poundevent': #Pounding door er egentlig ikke et rigtigt event.
-        return 0
-    elif event == 'slamevent':
         return 1
-    elif event == 'ladyevent':
+    elif event == 'slamevent':
         return 2
-    elif event == 'vaseevent':
+    elif event == 'ladyevent':
         return 3
+    elif event == 'vaseevent':
+        return 4
     else:
         return 0
+
+def spike_to_int(spike):
+    if spike == 'spikehr':
+        return 1
+    elif spike == 'spikegsr':
+        return 2
+    else:
+        0
 
 def format_text(text):
     output = []
@@ -32,7 +50,8 @@ def format_text(text):
     for l in text:
         if l:
             try:
-                event = ''
+                event = 0
+                spike = 0
                 l = l.split()
                 hr = l[0][3:]
                 gsr = l[1][4:]
@@ -40,12 +59,15 @@ def format_text(text):
                 y = l[3][:-1]
                 z = l[4][:-1]
                 time = l[5][5:]
-                if len(l) > 6:
-                    event = l[6]
-                line = "{}\t{}\t{}\t{}\t{}\t{}\t{}".format(hr, gsr, x, y, z, time, event_to_int(event.lower()))
+                if len(l) == 7:
+                    event = event_to_int(l[6].lower())
+                    if event == 0:
+                        spike = spike_to_int(l[6].lower())
+                        
+                line = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}".format(hr, gsr, x, y, z, time, event, spike)
                 output.append(line)
-            except:
-                print("WARNING: Kunne ikke formattere ", l)
+            except Exception as e:
+                print("WARNING: Kunne ikke formattere ", l, e)
     return '\n'.join(output)
         
     
