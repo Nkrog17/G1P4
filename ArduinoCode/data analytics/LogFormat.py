@@ -1,5 +1,6 @@
 '''
 Output-formatet er følgende:
+1    2   3  4  5   6    7         8
 HR  GSR  X  Y  Z  TIME  EVENT#  SPIKE#
 
 event 0 = none
@@ -64,7 +65,7 @@ def format_text(text):
                     if event == 0:
                         spike = spike_to_int(l[6].lower())
                         
-                line = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}".format(hr, gsr, x, y, z, time, event, spike)
+                line = "{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}".format(hr, gsr, x, y, z, time, event, spike).replace(',','.')
                 output.append(line)
             except Exception as e:
                 print("WARNING: Kunne ikke formattere ", l, e)
