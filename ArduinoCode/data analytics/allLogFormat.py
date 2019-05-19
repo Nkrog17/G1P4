@@ -14,10 +14,12 @@ spike 1 = spike HR
 spike 2 = spike GSR
 '''
 
-def open_file():
-    file = open('LogFile.txt')
-    text = file.read()
-    file.close()
+def open_files():
+    text = ''
+    for i in range(28):
+        file = open('testpersonM' + str(i) + '.txt')
+        text += '\n' + file.read()
+        file.close()
     return text
 
 def save_file(text):
@@ -79,7 +81,7 @@ def format_text(text):
         
     
 def run():
-    text = open_file()
+    text = open_files()
     text = format_text(text)
     save_file(text)
 
