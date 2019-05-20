@@ -1,22 +1,23 @@
 '''
-Whack Python script for formatting only GSR, which
-will be needed to find average GSR for each measurement.
-'''
+This script takes log data and finds mean values for HR and GSR
+for each participant.
 
-#Bør egentlig fjerne overflødige målinger, så der kun er en i sekundet.
+HR    GSR
+75    130
+'''
 
 def open_files():
     list_text = []
     for i in range(28):
         text = ''
-        file = open('testpersonU' + str(i) + '.txt')
+        file = open('testpersonM' + str(i) + '.txt')
         text += '\n' + file.read()
         list_text.append(text)
         file.close()
     return list_text
 
 def save_file(text):
-    output = open('allGSRU.txt', 'w')
+    output = open('avgScare.txt', 'w')
     output.write(text)
     output.close()
 
@@ -44,23 +45,21 @@ def format_text(list_text):
     output = []
     cline = 0
     for t in list_text:
+        hr = []
+        gsr = []
         index = 0
         for l in t.split('\n'):
             if l:
                 l = l.split()
-                gsr = l[1][4:]
-                if len(l)<7:
-                    if len(output)>index:
-                        output[index] += '\t{}'.format(gsr)
-                    else:
-                        output.append('NaN\t'*cline + '{}'.format(gsr))
-                    index += 1
-                
-        for i in range(len(output)-index):
-            output[index+i] += '\tNaN'
+                hr.append(int(l[0][3:]))
+                gsr.append(int(l[1][4:]))
+                index += 1
+        avg_hr = sum(hr)/len(hr)
+        avg_gsr = sum(gsr)/len(gsr)
+        output.append('\n{}\t{}'.format(avg_hr, avg_gsr))
         cline += 1
 
-    return '\n'.join(output)
+    return ''.join(output)
         
     
 def run():

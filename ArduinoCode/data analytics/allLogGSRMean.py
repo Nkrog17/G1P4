@@ -49,10 +49,11 @@ def format_text(list_text):
             if l:
                 l = l.split()
                 gsr = l[1][4:]
-                if len(output)>index:
-                    output[index] += '\t{}'.format(gsr)
-                else:
-                    output.append('NaN\t'*cline + '{}'.format(gsr))
+                if not len(l>5):
+                    if len(output)>index:
+                        output[index] += '\t{}'.format(gsr)
+                    else:
+                        output.append('NaN\t'*cline + '{}'.format(gsr))
                 index += 1
                 
         for i in range(len(output)-index):
